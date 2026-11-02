@@ -49,7 +49,7 @@ title: ""
     {% for seminar in sorted_seminars %}
       {% if seminar.date >= today %}
         {% assign count_upcoming = count_upcoming | plus: 1 %}
-<article class="seminar-card">
+<article class="seminar-card" id="{{ seminar.date }}">
   <div class="seminar-header">
     <span>📅 {{ seminar.date }} &bull; {{ seminar.time | default: "15:00 CET" }}</span>
 
@@ -150,5 +150,33 @@ title: ""
       </div>
     </div>
   </section>
+
+  <script>
+  (function () {
+    const hash = window.location.hash.replace('#', '').trim();
+    // Match date pattern YYYY-MM-DD
+    if (/^\d{4}-\d{2}-\d{2}$/.test(hash)) {
+      const today = new Date().toISOString().split('T')[0];
+
+      // If the target date is in the past, redirect to history.html preserving the anchor
+      if (hash < today) {
+        window.location.replace("{{ '/history.html' | relative_url }}#" + hash);
+        return;
+      }
+
+      // If upcoming, scroll to the card and highlight it
+      window.addEventListener('DOMContentLoaded', function () {
+        const targetCard = document.getElementById(hash);
+        if (targetCard) {
+          setTimeout(() => {
+            targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            targetCard.classList.add('highlight-target');
+          }, 150);
+        }
+      });
+    }
+  })();
+  </script>
+
 </div>
 

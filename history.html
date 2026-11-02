@@ -17,7 +17,7 @@ title: Seminar Archive & Recordings
 
     {% for seminar in sorted_past_seminars %}
       {% if seminar.date < today %}
-        <article class="seminar-card archive-item">
+        <article class="seminar-card archive-item" id="{{ seminar.date }}">
           <div class="seminar-header">
             <span>📅 {{ seminar.date }}</span>
             <span class="location-badge">
@@ -98,7 +98,6 @@ title: Seminar Archive & Recordings
 
     function showNextBatch() {
       const nextCount = visibleCount + batchSize;
-
       items.forEach((item, index) => {
         if (index < nextCount) {
           item.classList.remove('is-hidden');
@@ -106,21 +105,37 @@ title: Seminar Archive & Recordings
           item.classList.add('is-hidden');
         }
       });
-
       visibleCount = nextCount;
-
-      // Hide the button once all items are visible
-      if (visibleCount >= items.length) {
+      if (visibleCount >= items.length && container) {
         container.style.display = 'none';
       }
     }
 
-    if (items.length <= batchSize) {
-      container.style.display = 'none';
-    } else {
-      showNextBatch();
+    // Initialize pagination
+    showNextBatch();
+    if (loadMoreBtn) {
       loadMoreBtn.addEventListener('click', showNextBatch);
+    }
+
+    // Handle deep-linking via hash (e.g., #2024-05-16)
+    const hash = window.location.hash.replace('#', '').trim();
+    if (/^\d{4}-\d{2}-\d{2}$/.test(hash)) {
+      const targetCard = document.getElementById(hash);
+      if (targetCard) {
+        const targetIndex = items.indexOf(targetCard);
+
+        // Unhide enough batches so targetCard is visible in the DOM
+        while (visibleCount <= targetIndex && visibleCount < items.length) {
+          showNextBatch();
+        }
+
+        setTimeout(() => {
+          targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          targetCard.classList.add('highlight-target');
+        }, 200);
+      }
     }
   });
 </script>
+
 
