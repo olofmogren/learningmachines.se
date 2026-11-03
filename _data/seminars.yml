@@ -4736,9 +4736,9 @@
   is_cain: false
 - id: '2021-09-16'
   date: '2021-09-16'
-  speaker: 'Flash Talks: Aleksis Pirinen, Martin Willbo, Edvin Listo Zec, Ebba Ekblom,
-    Olof Mogren'
-  title: RIDR
+  speaker: Aleksis Pirinen, Martin Willbo, Edvin Listo Zec, Ebba Ekblom, Olof Mogren
+  title: Flash Talks
+  affiliation: RIDR
   time: 15:00 CET
   location: Sweden / Live Stream
   youtube_id: dgKO75qevhk
