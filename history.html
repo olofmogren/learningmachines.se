@@ -98,7 +98,6 @@ title: Seminar Archive & Recordings
   </div>
 </div>
 
-
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const batchSize = 10;
@@ -110,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let visibleCount = 0;
 
-  // Pre-index card text for instant search
+  // Pre-index card text for instant querying
   const indexedCards = items.map(card => ({
     element: card,
     text: card.textContent.toLowerCase()
@@ -146,7 +145,39 @@ document.addEventListener('DOMContentLoaded', function () {
     applyPagination();
   }
 
-  // 1. Initial page load pagination
+  function performSearch(query, updateHash = false) {
+    const rawQuery = query.trim();
+    const terms = rawQuery.toLowerCase().split(/\s+/).filter(Boolean);
+
+    if (terms.length > 0) {
+      if (container) container.style.display = 'none';
+
+      let matchesCount = 0;
+      indexedCards.forEach(({ element, text }) => {
+        const isMatch = terms.every(term => text.includes(term));
+        if (isMatch) {
+          element.classList.remove('is-hidden');
+          element.style.display = '';
+          matchesCount++;
+        } else {
+          element.style.display = 'none';
+        }
+      });
+      updateCounter(matchesCount, items.length, rawQuery);
+
+      if (updateHash) {
+        history.replaceState(null, '', '#' + encodeURIComponent(rawQuery));
+      }
+    } else {
+      applyPagination();
+      updateCounter(items.length, items.length, '');
+      if (updateHash) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
+    }
+  }
+
+  // 1. Initialize default pagination
   visibleCount = batchSize;
   applyPagination();
   updateCounter(items.length, items.length, '');
@@ -155,53 +186,50 @@ document.addEventListener('DOMContentLoaded', function () {
     loadMoreBtn.addEventListener('click', showNextBatch);
   }
 
-  // 2. Search filtering
+  // 2. Bind search input events
   if (searchInput) {
     searchInput.addEventListener('input', function (e) {
-      const query = e.target.value.trim().toLowerCase();
-      const terms = query.split(/\s+/).filter(Boolean);
-
-      if (terms.length > 0) {
-        // While searching, hide the "Load More" button
-        if (container) container.style.display = 'none';
-
-        let matchesCount = 0;
-        indexedCards.forEach(({ element, text }) => {
-          const isMatch = terms.every(term => text.includes(term));
-          if (isMatch) {
-            element.classList.remove('is-hidden');
-            element.style.display = '';
-            matchesCount++;
-          } else {
-            element.style.display = 'none';
-          }
-        });
-        updateCounter(matchesCount, items.length, query);
-      } else {
-        // When cleared, restore pagination view
-        applyPagination();
-        updateCounter(items.length, items.length, '');
-      }
+      performSearch(e.target.value, true);
     });
   }
 
-  // 3. Deep-linking via URL hash (e.g., #2024-05-16)
-  const hash = window.location.hash.replace('#', '').trim();
-  if (/^\d{4}-\d{2}-\d{2}$/.test(hash)) {
-    const targetCard = document.getElementById(hash);
-    if (targetCard) {
-      const targetIndex = items.indexOf(targetCard);
-      while (visibleCount <= targetIndex && visibleCount < items.length) {
-        visibleCount = Math.min(visibleCount + batchSize, items.length);
-      }
-      applyPagination();
+  // 3. Inspect URL hash on load
+  const rawHash = window.location.hash.replace(/^#/, '').trim();
 
-      setTimeout(() => {
-        targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        targetCard.classList.add('highlight-target');
-      }, 200);
+  if (rawHash) {
+    const decodedHash = decodeURIComponent(rawHash);
+
+    // Case A: Exact date format (YYYY-MM-DD) -> Deep-link to seminar card
+    if (/^\d{4}-\d{2}-\d{2}$/.test(decodedHash)) {
+      const targetCard = document.getElementById(decodedHash);
+      if (targetCard) {
+        const targetIndex = items.indexOf(targetCard);
+        while (visibleCount <= targetIndex && visibleCount < items.length) {
+          visibleCount = Math.min(visibleCount + batchSize, items.length);
+        }
+        applyPagination();
+
+        setTimeout(() => {
+          targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          targetCard.classList.add('highlight-target');
+        }, 200);
+      }
+    } else {
+      // Case B: Search query (e.g., #transformer or #sara beery)
+      if (searchInput) {
+        searchInput.value = decodedHash;
+      }
+      performSearch(decodedHash, false);
     }
   }
+
+  // 4. Handle in-page browser forward/back hash navigation
+  window.addEventListener('hashchange', function () {
+    const newHash = decodeURIComponent(window.location.hash.replace(/^#/, '').trim());
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(newHash)) {
+      if (searchInput) searchInput.value = newHash;
+      performSearch(newHash, false);
+    }
+  });
 });
 </script>
-
