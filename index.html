@@ -108,7 +108,12 @@ title: ""
       {% endif %}
 
       {% if seminar.bio and seminar.bio != "" %}
-        <p class="speaker-bio"><strong>Bio:</strong> {{ seminar.bio }}</p>
+        <details class="speaker-bio-details">
+          <summary>About {{ seminar.speaker | split: ' ' | first | default: "the speaker" }}</summary>
+          <div class="bio-content">
+            <p>{{ seminar.bio }}</p>
+          </div>
+        </details>
       {% endif %}
 
       <!-- Expandable Physical Venue Details -->
