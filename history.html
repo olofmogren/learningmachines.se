@@ -111,6 +111,7 @@ title: Seminar Archive & Recordings
   </div>
 </div>
 
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const batchSize = 10;
@@ -122,10 +123,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let visibleCount = 0;
 
-  // Pre-index card text for instant querying
+  // Normalizes text by removing diacritics/accents and lowercasing
+  function normalizeStr(str) {
+    return (str || '')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase();
+  }
+
+  // Pre-index cards with accent-stripped text for fast searching
   const indexedCards = items.map(card => ({
     element: card,
-    text: card.textContent.toLowerCase()
+    text: normalizeStr(card.textContent)
   }));
 
   function updateCounter(showing, total, query) {
@@ -160,13 +169,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function performSearch(query, updateHash = false) {
     const rawQuery = query.trim();
-    const terms = rawQuery.toLowerCase().split(/\s+/).filter(Boolean);
+    // Normalize and split the query into individual keywords
+    const terms = normalizeStr(rawQuery).split(/\s+/).filter(Boolean);
 
     if (terms.length > 0) {
+      // Hide pagination controls while searching
       if (container) container.style.display = 'none';
 
       let matchesCount = 0;
       indexedCards.forEach(({ element, text }) => {
+        // Every term must be present in the normalized card text
         const isMatch = terms.every(term => text.includes(term));
         if (isMatch) {
           element.classList.remove('is-hidden');
@@ -182,6 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
         history.replaceState(null, '', '#' + encodeURIComponent(rawQuery));
       }
     } else {
+      // Restore pagination and counters when search input is empty
       applyPagination();
       updateCounter(items.length, items.length, '');
       if (updateHash) {
@@ -199,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loadMoreBtn.addEventListener('click', showNextBatch);
   }
 
-  // 2. Bind search input events
+  // 2. Search input listener
   if (searchInput) {
     searchInput.addEventListener('input', function (e) {
       performSearch(e.target.value, true);
@@ -212,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (rawHash) {
     const decodedHash = decodeURIComponent(rawHash);
 
-    // Case A: Exact date format (YYYY-MM-DD) -> Deep-link to seminar card
+    // Case A: Date anchor (YYYY-MM-DD) -> Unhide batches and scroll to seminar
     if (/^\d{4}-\d{2}-\d{2}$/.test(decodedHash)) {
       const targetCard = document.getElementById(decodedHash);
       if (targetCard) {
@@ -228,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 200);
       }
     } else {
-      // Case B: Search query (e.g., #transformer or #sara beery)
+      // Case B: Search query string -> populate input and filter immediately
       if (searchInput) {
         searchInput.value = decodedHash;
       }
@@ -236,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // 4. Handle in-page browser forward/back hash navigation
+  // 4. Handle in-browser Back/Forward navigation of the URL hash
   window.addEventListener('hashchange', function () {
     const newHash = decodeURIComponent(window.location.hash.replace(/^#/, '').trim());
     if (!/^\d{4}-\d{2}-\d{2}$/.test(newHash)) {
