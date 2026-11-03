@@ -25,7 +25,7 @@
   time: 15:00 CET
   location: Sweden / Live Stream
   photo: /assets/images/speakers/2027-01-14-maria-perez-ortiz.jpg
-  is_cain: false
+  is_cain: true
 - id: '2026-12-17'
   date: '2026-12-17'
   speaker: Lester Jame Miranda
@@ -91,7 +91,7 @@
   affiliation: Researcher, University of Aegean
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2026-11-05-anastasia-kakouri.png
+  photo: /assets/images/speakers/2026-11-05-anastasia-kakouri.jpg
   abstract: 'The spatial and temporal representation of anthropogenic emissions is
     essential for atmospheric modelling, yet its influence on the predictive performance
     of data-driven air quality models remains insufficiently assessed. This study
@@ -129,7 +129,7 @@
     She also develops automated and reproducible computational workflows for large-scale
     environmental data processing and analysis.
   registration_url: https://form.apsis.one/qI3yY6lPRgxPN
-  is_cain: false
+  is_cain: true
 - id: '2026-10-22'
   date: '2026-10-22'
   speaker: Luca Ciampi
@@ -190,7 +190,7 @@
   affiliation: PhD candidate, University of Massachusetts Amherst
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2026-10-08-rangel-daroya.png
+  photo: /assets/images/speakers/2026-10-08-rangel-daroya.jpg
   abstract: 'In many scientific domains, the goal is not simply to classify an image
     or produce a visually plausible segmentation, but to estimate quantities that
     scientists and decision-makers can use: river width, water extent, sediment concentration,
@@ -229,7 +229,7 @@
     her PhD Portfolio with Distinction. Her work has appeared at CVPR, ICCV, WACV,
     AAAI, and IEEE JSTARS, including a CVPR 2024 Highlight paper.
   youtube_id: 6xryrxiLMS
-  is_cain: false
+  is_cain: true
 - id: '2026-09-24'
   date: '2026-09-24'
   speaker: Ana Lucic
@@ -238,7 +238,7 @@
   affiliation: Associate Professor, University of Amsterdam
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2026-09-24-ana-lucic.png
+  photo: /assets/images/speakers/2026-09-24-ana-lucic.jpg
   abstract: 'Reliable forecasting of the Earth system is essential for mitigating
     natural disasters and supporting human progress. Traditional numerical models,
     although powerful, are extremely computationally expensive1. Recent advances in
@@ -261,7 +261,7 @@
     is a member of the European Laboratory for Learning and Intelligent Systems (ELLIS)
     and the Amsterdam ELLIS Unit. Her work has been published in venues such as Nature,
     ICML, AAAI, AISTATS, CVPR and FAccT.
-  is_cain: false
+  is_cain: true
 - id: '2026-09-17'
   date: '2026-09-17'
   speaker: Jaime Caballer Revenga
@@ -322,7 +322,7 @@
     \ for ecosystem physiology predictive modelling and (ii) method development in\
     \ environmental imaging spectroscopy."
   youtube_id: YyWUYAdqK6s
-  is_cain: false
+  is_cain: true
 - id: '2026-08-27'
   date: '2026-08-27'
   speaker: Ariel Flint Ashery
@@ -352,7 +352,7 @@
     His work has been published in Science Advances and has received international
     media coverage, including features in The Guardian and El País.
   youtube_id: Ox1zIWHTnn4
-  is_cain: false
+  is_cain: true
 - id: '2026-06-25'
   date: '2026-06-25'
   speaker: Markus Reichstein
@@ -394,7 +394,7 @@
     Gottfried Wilhelm Leibniz Prize in 2020. His groundbreaking collaborative research
     has also been supported by a major European Research Council (ERC) Synergy Grant.
   youtube_id: lPN4aVyfbD8
-  is_cain: false
+  is_cain: true
 - id: '2026-06-11'
   date: '2026-06-11'
   speaker: Gustau Camps-Valls
@@ -403,7 +403,7 @@
   affiliation: Professor, University of Valencia
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2026-06-11-gustau-camps-valls.png
+  photo: /assets/images/speakers/2026-06-11-gustau-camps-valls.jpg
   abstract: 'I will give a sarcastic and quite op-ed tour trying to explain why XAI
     is misleading us. Everything from SHAP plots to counterfactuals may look trustworthy,
     but underneath, they''re often driven by correlations, not causation. In fields
@@ -428,7 +428,7 @@
     Good seminar series and holds visiting positions at the Institut Polytechnique
     de Paris and the Max Planck Institute. https://isp.uv.es
   youtube_id: saoF4x7ZpsQ
-  is_cain: false
+  is_cain: true
 - id: '2026-05-28'
   date: '2026-05-28'
   speaker: Kelsey Doerksen
@@ -462,7 +462,7 @@
     Machine Learning for Earth Systems Science", collaborating with the United Nations,
     European Space Agency and NASA during her PhD.
   youtube_id: v8bGOmmITJw
-  is_cain: false
+  is_cain: true
 - id: '2026-05-07'
   date: '2026-05-07'
   speaker: Solmaz Khazaei
@@ -505,7 +505,7 @@
     through scalable AI-driven geospatial solutions.
   registration_url: https://form.apsis.one/dfOQvCwxGHJ46Lp
   youtube_id: f4f8p-NWDHg
-  is_cain: false
+  is_cain: true
 - id: '2026-03-26'
   date: '2026-03-26'
   speaker: Jeppe Rasmussen
@@ -517,7 +517,7 @@
   location: Lindholmsallén 10, Gothenburg
   city: Gothenburg
   venue_address: Lindholmsallén 10, Gothenburg
-  photo: /assets/images/speakers/2026-03-26-jeppe-rasmussen.webp
+  photo: /assets/images/speakers/2026-03-26-jeppe-rasmussen.jpg
   abstract: 'Bioacoustics, the study of nature’s sounds, has long been a powerful
     tool for studying wildlife. With the rise of artificial intelligence, particularly
     deep learning, the potential of this field has expanded dramatically. By applying
@@ -554,7 +554,7 @@
     narwhales in Greenland.'
   registration_url: https://form.apsis.one/oAF2JMgbkl1slwd
   youtube_id: 7I1S13S33Pc
-  is_cain: false
+  is_cain: true
 - id: '2026-03-19'
   date: '2026-03-19'
   speaker: Isabelle Tingzon
@@ -600,7 +600,7 @@
     in Southeast Asia, Latin America, the Middle East, and the Caribbean.
   registration_url: https://form.apsis.one/A1g737VYnR
   youtube_id: vJDXlvI0Tgo
-  is_cain: false
+  is_cain: true
 - id: '2026-02-19'
   date: '2026-02-19'
   speaker: Sanja Karilanova
@@ -643,7 +643,7 @@
   affiliation: Lund University
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2026-02-05-pablo-villanueva-perez.png
+  photo: /assets/images/speakers/2026-02-05-pablo-villanueva-perez.jpg
   abstract: 'Artificial Intelligence, and particularly deep learning, is transforming
     X-ray imaging by enabling fast, accurate analysis of massive datasets and uncovering
     complex correlations. At high-brilliance sources such as MAX IV, physics-informed
@@ -676,7 +676,7 @@
   affiliation: Karolinska Institute
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2026-01-22-nita-mulliqi.webp
+  photo: /assets/images/speakers/2026-01-22-nita-mulliqi.jpg
   abstract: 'Accurate histopathological assessment of prostate biopsies is essential
     for determining prognosis and guiding patient treatment; however, it remains hindered
     by substantial intra- and inter-observer variability. Although deep learning has
@@ -749,7 +749,7 @@
     developing self-supervised learning algorithms in remote sensing.
   registration_url: extra2
   youtube_id: AQhzSBxvhVM
-  is_cain: false
+  is_cain: true
 - id: '2025-11-27'
   date: '2025-11-27'
   speaker: Kalle Åström
@@ -833,7 +833,7 @@
     Mathematics at Brown University, USA.
   registration_url: extra2
   youtube_id: mFTFRA5sd3M
-  is_cain: false
+  is_cain: true
 - id: '2025-11-13'
   date: '2025-11-13'
   speaker: Nora Gourmelon
@@ -879,7 +879,7 @@
     2023, her interdisciplinary research bridges computer vision, remote sensing,
     and cryospheric science.
   registration_url: extra2
-  is_cain: false
+  is_cain: true
 - id: '2025-11-06'
   date: '2025-11-06'
   speaker: Felix Köhler
@@ -921,7 +921,7 @@
   affiliation: MIT
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2025-10-16-lena-stempfle.png
+  photo: /assets/images/speakers/2025-10-16-lena-stempfle.jpg
   abstract: Missing values are inevitable in real-world healthcare data, yet common
     strategies like imputation or missingness indicators often undermine interpretability.
     In this talk, I present methods for building interpretable models that remain
@@ -975,7 +975,7 @@
     and a Bachelor’s degree (2017) in Geography from the University of Zurich.
   registration_url: extra2
   youtube_id: rjPOzPH_CU8
-  is_cain: false
+  is_cain: true
 - id: '2025-09-25'
   date: '2025-09-25'
   speaker: Senior Researcher Sigrid Passano Hellan
@@ -1013,7 +1013,7 @@
     working on downscaling weather data and forecasting icing on wind turbines.
   registration_url: extra2
   youtube_id: 8hS638bP150
-  is_cain: false
+  is_cain: true
 - id: '2025-09-11'
   date: '2025-09-11'
   speaker: Georges Le Bellier
@@ -1057,7 +1057,7 @@
     data distributions.
   registration_url: extra2
   youtube_id: OAJx99nfplw
-  is_cain: false
+  is_cain: true
 - id: '2025-08-28'
   date: '2025-08-28'
   speaker: Markus Pettersson
@@ -1103,7 +1103,7 @@
     design.
   registration_url: extra2
   youtube_id: bgCQwK6a6HQ
-  is_cain: false
+  is_cain: true
 - id: '2025-06-19'
   date: '2025-06-19'
   speaker: Lily Xu
@@ -1134,7 +1134,7 @@
     and Optimization.
   registration_url: extra2
   youtube_id: a2B675quBHo
-  is_cain: false
+  is_cain: true
 - id: '2025-05-22'
   date: '2025-05-22'
   speaker: John Martinsson
@@ -1143,7 +1143,7 @@
   affiliation: PhD Student, RISE and Lund University
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2025-05-22-john-martinsson.png
+  photo: /assets/images/speakers/2025-05-22-john-martinsson.jpg
   abstract: 'Machine learning models now help scientists analyze vast datasets across
     every branch of science. These models typically improve with more data and larger
     architectures, mainly through supervised learning. Both training and evaluation
@@ -1168,7 +1168,7 @@
     effectively even with limited labeled data. More information on his website: johnmartinsson.org.'
   registration_url: extra2
   youtube_id: OKZDCabQ16w
-  is_cain: false
+  is_cain: true
 - id: '2025-05-15'
   date: '2025-05-15'
   speaker: Head of Earth System Modelling Peter Dueben
@@ -1200,7 +1200,7 @@
     and has been the coordinator of the MAELSTROM EuroHPC-Joint Undertaking project.
   registration_url: extra2
   youtube_id: vWaiFVLF_fw
-  is_cain: false
+  is_cain: true
 - id: '2025-05-08'
   date: '2025-05-08'
   speaker: Ghjulia Sialelli
@@ -1238,7 +1238,7 @@
     to inspire, ignite and innovate work in AI for the environment.
   registration_url: extra2
   youtube_id: mN0ENzlrUJE
-  is_cain: false
+  is_cain: true
 - id: '2025-04-10'
   date: '2025-04-10'
   speaker: Signal Processing Engineer Beici Liang
@@ -1318,7 +1318,7 @@
     resilient cities.
   registration_url: extra2
   youtube_id: 83XysQtGUDQ
-  is_cain: false
+  is_cain: true
 - id: '2025-03-27'
   date: '2025-03-27'
   speaker: María J. Molina
@@ -1356,7 +1356,7 @@
     collaboration.
   registration_url: extra2
   youtube_id: buEFjJQ-0pc
-  is_cain: false
+  is_cain: true
 - id: '2025-03-20'
   date: '2025-03-20'
   speaker: Oriol Nieto
@@ -1446,7 +1446,7 @@
     and the Environment and the Sustainability and AI Lab.'
   registration_url: extra2
   youtube_id: -o9x_wwg8mQ
-  is_cain: false
+  is_cain: true
 - id: '2025-03-06'
   date: '2025-03-06'
   speaker: Atakan Aral
@@ -1480,7 +1480,7 @@
     a total funding value of over €2.2M.
   registration_url: extra2
   youtube_id: x91bv6IJkck
-  is_cain: false
+  is_cain: true
 - id: '2025-02-20'
   date: '2025-02-20'
   speaker: Abdulhakim Abdi
@@ -1514,7 +1514,7 @@
     and Climate Science, Lund University.
   registration_url: extra2
   youtube_id: Gs3Tcfec6iY
-  is_cain: false
+  is_cain: true
 - id: '2025-02-06'
   date: '2025-02-06'
   speaker: Benjamin Cretois
@@ -1554,7 +1554,7 @@
     conservation. His work primarily focuses on developing deep learning tools to
     better analyze bioacoustic data.
   registration_url: extra2
-  is_cain: false
+  is_cain: true
 - id: '2025-01-30'
   date: '2025-01-30'
   speaker: Amal Nammouchi
@@ -1584,7 +1584,7 @@
     impactful real-world solutions.
   registration_url: extra2
   youtube_id: 5h5ksMKEG5Q
-  is_cain: false
+  is_cain: true
 - id: '2025-01-23'
   date: '2025-01-23'
   speaker: Newton Mwai Kinyanjui
@@ -1695,7 +1695,7 @@
     data sources.
   registration_url: extra2
   youtube_id: S0guqSER0co
-  is_cain: false
+  is_cain: true
 - id: '2024-11-21'
   date: '2024-11-21'
   speaker: Adjunct Professor Alp Kucukelbir
@@ -1753,7 +1753,7 @@
     in applications of these methods to earth system modeling. https://joeloskarsson.github.io/
   registration_url: extra2
   youtube_id: b2B9DYpFprc
-  is_cain: false
+  is_cain: true
 - id: '2024-10-24'
   date: '2024-10-24'
   speaker: Ankit Kariryaa
@@ -2029,7 +2029,7 @@
   affiliation: University of Oxford and Climate Analytics
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2024-05-23-shruti-nath.png
+  photo: /assets/images/speakers/2024-05-23-shruti-nath.jpg
   abstract: Climate models lay the foundation on which we can explore future climate
     scenarios and the impacts of anthropogenic greenhouse gas (GHG) emissions. They
     are process-driven models which solve a set of governing, physical equations over
@@ -2095,7 +2095,7 @@
   affiliation: Assistant Professor, Uppsala University
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2024-04-18-tobias-andermann.png
+  photo: /assets/images/speakers/2024-04-18-tobias-andermann.jpg
   abstract: Convolutional Neural Networks (CNNs) allow the seamless integration of
     multiple complex and heterogenous data types, making them very suitable tools
     for modeling biodiversity. Here we apply such CNN models to learn the complex
@@ -3337,7 +3337,7 @@
   affiliation: PhD Candidate, Chalmers University of Technology
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2023-02-02-vincent-szolnoky.png
+  photo: /assets/images/speakers/2023-02-02-vincent-szolnoky.jpg
   abstract: Most complex machine learning and modelling techniques are prone to over-ﬁtting
     and may subsequently generalise poorly to future data. Artiﬁcial neural networks
     are no different in this regard and, despite having a level of implicit regularisation
@@ -3502,7 +3502,7 @@
   affiliation: Assistant professor, MIT
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2022-12-01-sara-beery.jpeg
+  photo: /assets/images/speakers/2022-12-01-sara-beery.jpg
   abstract: 'Generalization to novel domains is a fundamental challenge for computer
     vision. Near-perfect accuracy on benchmarks is common, but these models do not
     work as expected when deployed outside of the training distribution. To build
@@ -3711,7 +3711,7 @@
     NCBR, Jagiellonian University
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2022-10-13-tomasz-trzcinski.png
+  photo: /assets/images/speakers/2022-10-13-tomasz-trzcinski.jpg
   abstract: 'Today, both science and industry rely heavily on machine learning models,
     predominantly artificial neural networks, that become increasingly complex and
     demand a significant amount of computational resources. The problem of model computational
@@ -3846,7 +3846,7 @@
   affiliation: Google Brain
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2022-09-08-neil-zeghidour.png
+  photo: /assets/images/speakers/2022-09-08-neil-zeghidour.jpg
   abstract: Audio codecs (mp3, Opus), are compression algorithms used whenever one
     needs to transmit audio, whether when streaming a song or during a conference
     call. In this talk, I will present SoundStream, a novel neural audio codec that
@@ -4050,7 +4050,7 @@
   affiliation: RISE Research Institutes of Sweden
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2022-05-05-fredrik-carlsson.png
+  photo: /assets/images/speakers/2022-05-05-fredrik-carlsson.jpg
   abstract: The introduction of immensely large Causal Language Models (CLMs) has
     rejuvenated the interest in open-ended text generation. However, controlling the
     generative process for these Transformer-based models is at large an unsolved
@@ -4076,7 +4076,7 @@
   affiliation: Uppsala University
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2022-04-28-thomas-schon.png
+  photo: /assets/images/speakers/2022-04-28-thomas-schon.jpg
   abstract: One of the key lessons to take away from contemporary machine learning
     is that flexible models offer the best predictive performance. This has implications
     in many situations. In this lecture I will try to make this concrete by looking
@@ -4134,7 +4134,7 @@
   affiliation: NYU
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2022-04-07-kyunghyun-cho.jpeg
+  photo: /assets/images/speakers/2022-04-07-kyunghyun-cho.jpg
   abstract: Neural autoregressive sequence models smear the probability among many
     possible sequences including degenerate ones, such as empty or repetitive sequences.
     In this work, we tackle one specific case where the model assigns a high probability
@@ -4173,7 +4173,7 @@
   affiliation: Lund University
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2022-03-31-martin-trimmel.png
+  photo: /assets/images/speakers/2022-03-31-martin-trimmel.jpg
   abstract: 'Many of the most widely used neural network architectures make use of
     rectified linear activations (ReLU, i.e. f(x) = max(x, 0)) and are therefore piecewise
     linear functions. The maximal subsets of the input space on which the network
@@ -4907,6 +4907,6 @@
   title: ''
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2020-10-22-fredrik-carlsson.png
+  photo: /assets/images/speakers/2020-10-22-fredrik-carlsson.jpg
   youtube_id: ewNiLzAECOs
   is_cain: false
