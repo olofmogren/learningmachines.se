@@ -83,6 +83,15 @@ title: Seminar Archive & Recordings
                 <p class="seminar-abstract">{{ seminar.abstract }}</p>
               {% endif %}
 
+              {% if seminar.bio and seminar.bio != "" %}
+                <details class="speaker-bio-details">
+                  <summary>About {{ seminar.speaker | split: ' ' | first | default: "the speaker" }}</summary>
+                  <div class="bio-content">
+                    <p>{{ seminar.bio }}</p>
+                  </div>
+                </details>
+              {% endif %}
+
               {% if seminar.venue_address and seminar.venue_address != "" %}
                 <details class="venue-details">
                   <summary>📍 On-site venue &amp; address</summary>
