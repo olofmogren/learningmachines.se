@@ -564,7 +564,6 @@ body.has-hero .site-header.scrolled .brand-link {
   max-width: 160px;
   object-fit: contain;
   margin-bottom: 16px;
-  filter: brightness(0) invert(1);
 }
 .partner-box h3 {
   font-family: var(--font-heading);
