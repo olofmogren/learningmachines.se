@@ -75,7 +75,7 @@ title: ""
       {% if seminar.is_cain %}
          <div class="avatar-wrapper">
            <img src="{{ seminar.photo }}" alt="{{ seminar.speaker }}" class="speaker-avatar">
-           <img src="/assets/images/cain-globe-only.png" class="avatar-cain-corner">
+           <img src="{{ '/assets/images/cain-globe-only.png' | relative_url }}" class="avatar-cain-corner">
          </div>
       {% else %}
         <img src="{{ seminar.photo }}" alt="{{ seminar.speaker }}" class="speaker-avatar">
