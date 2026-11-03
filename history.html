@@ -10,18 +10,18 @@ title: Seminar Archive & Recordings
   </div>
 </div>
 
-<div class="archive-search-container">
-  <input
-    type="search"
-    id="history-search"
-    placeholder="Search seminars by speaker, title, affiliation, or abstract..."
-    aria-label="Search seminars"
-    autocomplete="off"
-  />
-  <span id="search-counter" class="search-counter"></span>
-</div>
-
 <div class="container">
+  <div class="archive-search-container">
+    <input
+      type="search"
+      id="history-search"
+      placeholder="Search seminars by speaker, title, affiliation, or abstract..."
+      aria-label="Search seminars"
+      autocomplete="off"
+    />
+    <span id="search-counter" class="search-counter"></span>
+  </div>
+
   <section class="seminars-list" id="archive-list">
     {% assign today = 'now' | date: "%Y-%m-%d" %}
     {% assign sorted_past_seminars = site.data.seminars | sort: "date" | reverse %}
