@@ -902,7 +902,6 @@ body.has-hero .site-header.scrolled .brand-link {
   flex-shrink: 0;
 }
 
-/* Tidy pill styling below the avatar */
 .speaker-column .cain-badge {
   display: inline-flex;
   align-items: center;
@@ -918,7 +917,17 @@ body.has-hero .site-header.scrolled .brand-link {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   line-height: 1;
+  text-decoration: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  transition: all 0.2s ease;
+}
+
+.speaker-column .cain-badge:hover {
+  background: rgba(46, 125, 50, 0.32);
+  border-color: #81c784;
+  color: #a5d6a7;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.25);
 }
 
 .speaker-column .cain-badge-icon {
