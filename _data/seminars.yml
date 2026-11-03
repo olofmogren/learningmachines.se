@@ -4805,9 +4805,10 @@
   is_cain: false
 - id: '2021-03-25'
   date: '2021-03-25'
-  speaker: 'Flash Talks: Evi (x), Anders Arpteg, Björn Gambäck, Wilhelm Söderkvist
-    Wermelin (x), Rickard Brännvall'
-  title: ''
+  speaker: Evi, Anders Arpteg, Björn Gambäck, Wilhelm Söderkvist Wermelin, Rickard
+    Brännvall
+  title: Flash Talks
+  affiliation: RISE Research Institutes of Sweden
   time: 15:00 CET
   location: Sweden / Live Stream
   is_cain: false
@@ -4862,9 +4863,8 @@
   is_cain: false
 - id: '2020-12-03'
   date: '2020-12-03'
-  speaker: 'Flash Talks: Edvin Listo Zec, Maria Bånkestad?, Sepideh Pashami?, Olof
-    G?'
-  title: ''
+  speaker: Edvin Listo Zec, Maria Bånkestad, Sepideh Pashami, Olof G
+  title: Flash Talks
   time: 15:00 CET
   location: Sweden / Live Stream
   is_cain: false
