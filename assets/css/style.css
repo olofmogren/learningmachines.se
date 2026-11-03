@@ -858,3 +858,37 @@ body.has-hero .site-header.scrolled .brand-link {
   object-fit: contain;
   display: inline-block;
 }
+/* Container must match the exact dimensions of .speaker-avatar (96px) */
+.avatar-wrapper {
+  position: relative !important;
+  width: 96px;
+  height: 96px;
+  min-width: 96px;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+/* Speaker photo fills the container */
+.avatar-wrapper .speaker-avatar {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* CAIN globe pinned as a tiny badge in the bottom-right corner */
+.avatar-cain-corner {
+  position: absolute !important;
+  bottom: -2px !important;
+  right: -2px !important;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50% !important;
+  background: var(--bg-card, #121621) !important;
+  border: 2px solid var(--accent-cyan, #8ad1cc) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6) !important;
+  object-fit: contain !important;
+  z-index: 2 !important;
+  pointer-events: none;
+}
