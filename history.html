@@ -31,6 +31,12 @@ title: Seminar Archive & Recordings
         <article class="seminar-card archive-item" id="{{ seminar.date }}">
           <div class="seminar-header">
             <span>📅 {{ seminar.date }}</span>
+            {% if seminar.is_cain %}
+            <span class="cain-badge" title="Co-organised with Climate AI Nordics">
+              <img src="{{ '/assets/images/cain-globe-only.png' | relative_url }}" alt="CAIN" class="cain-badge-icon">
+              CAIN
+            </span>
+            {% endif %}
             <span class="location-badge">
               {% if seminar.city and seminar.city != "" %}
                 📍 Hybrid — {{ seminar.city }}
@@ -43,7 +49,14 @@ title: Seminar Archive & Recordings
           <div class="seminar-body">
             <!-- Speaker Avatar with Fallbacks -->
             {% if seminar.photo and seminar.photo != "" %}
-              <img src="{{ seminar.photo }}" alt="{{ seminar.speaker }}" class="speaker-avatar">
+              {% if seminar.is_cain %}
+              <div class="avatar-wrapper">
+                <img src="{{ seminar.photo }}" alt="{{ seminar.speaker }}" class="speaker-avatar">
+                <img src="/assets/images/cain-globe-only.png" class="avatar-cain-corner">
+              </div>
+              {% else %}
+                <img src="{{ seminar.photo }}" alt="{{ seminar.speaker }}" class="speaker-avatar">
+              {% endif %}
             {% elsif seminar.is_cain %}
               <img src="{{ '/assets/images/cain-globe-only.png' | relative_url }}" alt="Climate AI Nordics" class="speaker-avatar fallback-avatar cain-fallback">
             {% else %}
