@@ -786,3 +786,41 @@ body.has-hero .site-header.scrolled .brand-link {
   border-color: var(--accent-cyan) !important;
   box-shadow: 0 0 25px rgba(138, 209, 204, 0.45) !important;
 }
+
+/* History search input styling */
+.archive-search-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0 32px 0;
+  width: 100%;
+}
+
+#history-search {
+  flex: 1;
+  background: #111827;
+  border: 1px solid #374151;
+  color: #f3f4f6;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#history-search:focus {
+  border-color: #8ad1cc;
+  box-shadow: 0 0 0 3px rgba(138, 209, 204, 0.15);
+}
+
+#history-search::placeholder {
+  color: #6b7280;
+}
+
+.search-counter {
+  font-size: 0.88rem;
+  color: #9ca3af;
+  white-space: nowrap;
+  font-family: 'Space Grotesk', monospace, sans-serif;
+}

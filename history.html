@@ -10,6 +10,17 @@ title: Seminar Archive & Recordings
   </div>
 </div>
 
+<div class="archive-search-container">
+  <input
+    type="search"
+    id="history-search"
+    placeholder="Search seminars by speaker, title, affiliation, or abstract..."
+    aria-label="Search seminars"
+    autocomplete="off"
+  />
+  <span id="search-counter" class="search-counter"></span>
+</div>
+
 <div class="container">
   <section class="seminars-list" id="archive-list">
     {% assign today = 'now' | date: "%Y-%m-%d" %}
@@ -136,6 +147,45 @@ title: Seminar Archive & Recordings
       }
     }
   });
-</script>
 
+document.addEventListener('DOMContentLoaded', () => {
+  const searchInput = document.getElementById('history-search');
+  const counter = document.getElementById('search-counter');
+  const cards = Array.from(document.querySelectorAll('.archive-item'));
+
+  // Pre-index text content for fast querying
+  const indexedCards = cards.map(card => ({
+    element: card,
+    text: card.textContent.toLowerCase()
+  }));
+
+  function updateCounter(visibleCount, totalCount, query) {
+    if (!query) {
+      counter.textContent = `${totalCount} seminars`;
+    } else {
+      counter.textContent = `Showing ${visibleCount} of ${totalCount}`;
+    }
+  }
+
+  updateCounter(cards.length, cards.length, '');
+
+  searchInput.addEventListener('input', (e) => {
+    const terms = e.target.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    let visibleCount = 0;
+
+    indexedCards.forEach(({ element, text }) => {
+      // Every term in the query must match somewhere in the card
+      const matches = terms.every(term => text.includes(term));
+      if (matches) {
+        element.style.display = '';
+        visibleCount++;
+      } else {
+        element.style.display = 'none';
+      }
+    });
+
+    updateCounter(visibleCount, cards.length, e.target.value.trim());
+  });
+});
+</script>
 
