@@ -1011,8 +1011,8 @@ body.has-hero .site-header.scrolled .brand-link {
 }
 
 .coorganized-cain-corner .cain-corner-logo {
-  height: 38px;          /* Increased from 22px */
-  max-width: 160px;      /* Increased from 110px */
+  height: 48px;          /* Increased from 22px */
+  max-width: 200px;      /* Increased from 110px */
   width: auto;
   object-fit: contain;
   display: block;
