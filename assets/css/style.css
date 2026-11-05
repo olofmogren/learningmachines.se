@@ -977,3 +977,45 @@ body.has-hero .site-header.scrolled .brand-link {
   fill: #cc0000 !important;
   fill-opacity: 1 !important;
 }
+/* Container for action buttons and corner banner */
+.seminar-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+  padding-top: 8px;
+}
+
+/* Corner co-organization banner */
+.coorganized-cain-corner {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto; /* Pushes to the bottom right corner */
+  text-decoration: none;
+  opacity: 0.88;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.coorganized-cain-corner:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.coorganized-cain-corner span {
+  font-size: 0.82rem;
+  color: var(--text-muted, #94a3b8);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.coorganized-cain-corner .cain-corner-logo {
+  height: 22px;
+  width: auto;
+  max-width: 110px;
+  object-fit: contain;
+  display: block;
+  filter: none !important; /* Preserves globe colors */
+}

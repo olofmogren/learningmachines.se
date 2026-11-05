@@ -44,29 +44,13 @@ title: Seminar Archive & Recordings
             <div class="speaker-column">
               <!-- Speaker Avatar with Fallbacks -->
               {% if seminar.photo and seminar.photo != "" %}
-                {% if seminar.is_cain %}
-                <div class="avatar-wrapper">
                   <img src="{{ seminar.photo }}" alt="{{ seminar.speaker }}" class="speaker-avatar">
-                  <img src="{{ '/assets/images/cain-globe-only.png' | relative_url }}" class="avatar-cain-corner">
-                </div>
-                {% else %}
-                  <img src="{{ seminar.photo }}" alt="{{ seminar.speaker }}" class="speaker-avatar">
-                {% endif %}
               {% elsif seminar.is_cain %}
                 <img src="{{ '/assets/images/cain-globe-only.png' | relative_url }}" alt="Climate AI Nordics" class="speaker-avatar fallback-avatar cain-fallback">
               {% else %}
                 <img src="{{ '/assets/images/lm-logo.svg' | relative_url }}" alt="Learning Machines" class="speaker-avatar fallback-avatar lm-fallback">
               {% endif %}
 
-              {% if seminar.is_cain %}
-              <br />
-              <span class="cain-badge" title="Co-organised with Climate AI Nordics">
-                <a class="cain-badge" href="https://climateainordics.com/">
-                  <img src="{{ '/assets/images/cain-globe-only.png' | relative_url }}" alt="CAIN" class="cain-badge-icon">
-                  CAIN
-                </a>
-              </span>
-              {% endif %}
             </div>
 
             <div class="seminar-info">
@@ -118,6 +102,18 @@ title: Seminar Archive & Recordings
                   </button>
                 </div>
               {% endif %}
+
+              {% if seminar.is_cain %}
+          <a
+            href="https://climateainordics.com/"
+            target="_blank"
+            class="coorganized-cain-corner"
+            title="Climate AI Nordics"
+          >
+            <span>Co-organized with</span>
+            <img src="{{ '/assets/images/cain-logo-800x283.png' | relative_url }}" alt="Climate AI Nordics" class="cain-corner-logo">
+          </a>
+        {% endif %}
             </div>
           </div>
         </article>
