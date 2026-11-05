@@ -7,6 +7,15 @@
   time: 15:00 CET
   location: Sweden / Live Stream
   is_cain: false
+- id: '2027-03-11'
+  date: '2027-03-11'
+  speaker: Emanuele Rossi
+  speaker_title: Post doc
+  title: ''
+  affiliation: Post doc, Sapienza University, Rome
+  time: 15:00 CET
+  location: Sweden / Live Stream
+  is_cain: true
 - id: '2027-01-28'
   date: '2027-01-28'
   speaker: Nicola Messina
