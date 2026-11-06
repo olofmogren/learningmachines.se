@@ -23,11 +23,24 @@ title: Seminar Archive & Recordings
   </div>
 
   <section class="seminars-list" id="archive-list">
-    {% assign today = 'now' | date: "%Y-%m-%d" %}
+    {% assign now_unix = 'now' | date: '%s' | plus: 0 %}
     {% assign sorted_past_seminars = site.data.seminars | sort: "date" | reverse %}
 
     {% for seminar in sorted_past_seminars %}
-      {% if seminar.date < today %}
+      {% assign cleaned_time = seminar.time | strip %}
+      {% if cleaned_time == nil or cleaned_time == "" %}
+        {% assign seminar_time = "15:00" %}
+      {% else %}
+        {% assign seminar_time = cleaned_time | split: ' ' | first %}
+      {% endif %}
+
+      {% capture iso_dt %}{{ seminar.date | strip }}T{{ seminar_time }}:00{% endcapture %}
+      {% assign seminar_unix = iso_dt | date: '%s' | plus: 0 %}
+
+      {% comment %}
+        Moves to history as soon as the start time arrives (<= now)
+      {% endcomment %}
+      {% if seminar_unix <= now_unix %}
         <article class="seminar-card archive-item" id="{{ seminar.date }}">
           <div class="seminar-header">
             <span>📅 {{ seminar.date }}</span>
