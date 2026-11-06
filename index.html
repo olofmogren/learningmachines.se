@@ -42,102 +42,102 @@ title: ""
   </div>
 
   <section class="seminars-list">
-    {% assign current_timestamp = 'now' | date: '%s' | plus: 0 %}
+    {% assign today = 'now' | date: "%Y-%m-%d" %}
     {% assign sorted_seminars = site.data.seminars | sort: "date" %}
     {% assign count_upcoming = 0 %}
 
     {% for seminar in sorted_seminars %}
-      {% capture seminar_datetime_str %}{{ seminar.date }} {{ seminar.time | default: '15:00' }}{% endcapture %}
-      {% assign seminar_timestamp = seminar_datetime_str | date: '%s' | plus: 0 %}
-      {% if seminar_timestamp <= current_timestamp %}
-
+      {% if seminar.date >= today %}
         {% assign count_upcoming = count_upcoming | plus: 1 %}
-          <article class="seminar-card" id="{{ seminar.date }}">
-            <div class="seminar-header">
-              <span>📅 {{ seminar.date }} &bull; {{ seminar.time | default: "15:00 CET" }}</span>
+<article class="seminar-card" id="{{ seminar.date }}">
+  <div class="seminar-header">
+    <span>📅 {{ seminar.date }} &bull; {{ seminar.time | default: "15:00 CET" }}</span>
 
-              <span class="location-badge">
-                {% if seminar.city and seminar.city != "" %}
-                  📍 Hybrid — {{ seminar.city }}
-                {% else %}
-                  Live Stream
-                {% endif %}
-              </span>
-            </div>
+    <span class="location-badge">
+      {% if seminar.city and seminar.city != "" %}
+        📍 Hybrid — {{ seminar.city }}
+      {% else %}
+        Live Stream
+      {% endif %}
+    </span>
+  </div>
 
-            <div class="seminar-body">
-              <div class="speaker-column">
-                <!-- Speaker Avatar with Fallbacks -->
-                {% if seminar.photo and seminar.photo != "" %}
-                    <img src="{{ seminar.photo }}" alt="{{ seminar.speaker }}" class="speaker-avatar">
-                {% elsif seminar.is_cain %}
-                  <img src="{{ '/assets/images/cain-globe-only.png' | relative_url }}" alt="Climate AI Nordics" class="speaker-avatar fallback-avatar cain-fallback">
-                {% else %}
-                  <img src="{{ '/assets/images/lm-logo.svg' | relative_url }}" alt="Learning Machines" class="speaker-avatar fallback-avatar lm-fallback">
-                {% endif %}
-              </div>
+  <div class="seminar-body">
+    <div class="speaker-column">
+      <!-- Speaker Avatar with Fallbacks -->
+      {% if seminar.photo and seminar.photo != "" %}
+          <img src="{{ seminar.photo }}" alt="{{ seminar.speaker }}" class="speaker-avatar">
+      {% elsif seminar.is_cain %}
+        <img src="{{ '/assets/images/cain-globe-only.png' | relative_url }}" alt="Climate AI Nordics" class="speaker-avatar fallback-avatar cain-fallback">
+      {% else %}
+        <img src="{{ '/assets/images/lm-logo.svg' | relative_url }}" alt="Learning Machines" class="speaker-avatar fallback-avatar lm-fallback">
+      {% endif %}
 
-              <div class="seminar-info">
-                <h2 class="seminar-title">{{ seminar.title | default: "Upcoming seminar" }}</h2>
+    </div>
 
-                <div class="speaker-meta">
-                  {{ seminar.speaker }}
-                  {% if seminar.affiliation and seminar.affiliation != "" %}
-                    <span class="affiliation">— {{ seminar.affiliation }}</span>
-                  {% endif %}
-                </div>
 
-                {% if seminar.abstract and seminar.abstract != "" %}
-                  <p class="seminar-abstract">{{ seminar.abstract }}</p>
-                {% endif %}
 
-                {% if seminar.bio and seminar.bio != "" %}
-                  <details class="speaker-bio-details">
-                    <summary>About {{ seminar.speaker | split: ' ' | first | default: "the speaker" }}</summary>
-                    <div class="bio-content">
-                      <p>{{ seminar.bio }}</p>
-                    </div>
-                  </details>
-                {% endif %}
+    <div class="seminar-info">
+      <h2 class="seminar-title">{{ seminar.title | default: "Upcoming seminar" }}</h2>
 
-                <!-- Expandable Physical Venue Details -->
-                {% if seminar.venue_address and seminar.venue_address != "" %}
-                  <details class="venue-details">
-                    <summary>📍 On-site venue &amp; address</summary>
-                    <div class="venue-content">
-                      <p>{{ seminar.venue_address }}</p>
-                    </div>
-                  </details>
-                {% endif %}
+      <div class="speaker-meta">
+        {{ seminar.speaker }}
+        {% if seminar.affiliation and seminar.affiliation != "" %}
+          <span class="affiliation">— {{ seminar.affiliation }}</span>
+        {% endif %}
+      </div>
 
-                <div class="seminar-actions" style="margin-top: 18px;">
-                  {% if seminar.registration_url and seminar.registration_url != "" %}
-                    <a href="{{ seminar.registration_url }}" target="_blank" rel="noopener noreferrer" class="btn-stream">
-                      Register for Seminar &rarr;
-                    </a>
-                  {% else %}
-                    <span class="btn-stream btn-disabled">
-                      Registration opens soon
-                    </span>
-                  {% endif %}
+      {% if seminar.abstract and seminar.abstract != "" %}
+        <p class="seminar-abstract">{{ seminar.abstract }}</p>
+      {% endif %}
 
-                  {% if seminar.is_cain %}
-                    <a
-                      href="https://climateainordics.com/"
-                      target="_blank"
-                      class="coorganized-cain-corner"
-                      title="Climate AI Nordics"
-                    >
-                      <span>Co-organized with</span>
-                      <img src="{{ '/assets/images/cain-logo-800x283.png' | relative_url }}" alt="Climate AI Nordics" class="cain-corner-logo">
-                    </a>
-                  {% endif %}
+      {% if seminar.bio and seminar.bio != "" %}
+        <details class="speaker-bio-details">
+          <summary>About {{ seminar.speaker | split: ' ' | first | default: "the speaker" }}</summary>
+          <div class="bio-content">
+            <p>{{ seminar.bio }}</p>
+          </div>
+        </details>
+      {% endif %}
 
-                </div>
+      <!-- Expandable Physical Venue Details -->
+      {% if seminar.venue_address and seminar.venue_address != "" %}
+        <details class="venue-details">
+          <summary>📍 On-site venue &amp; address</summary>
+          <div class="venue-content">
+            <p>{{ seminar.venue_address }}</p>
+          </div>
+        </details>
+      {% endif %}
 
-              </div>
-            </div>
-          </article>
+      <div class="seminar-actions" style="margin-top: 18px;">
+        {% if seminar.registration_url and seminar.registration_url != "" %}
+          <a href="{{ seminar.registration_url }}" target="_blank" rel="noopener noreferrer" class="btn-stream">
+            Register for Seminar &rarr;
+          </a>
+        {% else %}
+          <span class="btn-stream btn-disabled">
+            Registration opens soon
+          </span>
+        {% endif %}
+
+        {% if seminar.is_cain %}
+          <a
+            href="https://climateainordics.com/"
+            target="_blank"
+            class="coorganized-cain-corner"
+            title="Climate AI Nordics"
+          >
+            <span>Co-organized with</span>
+            <img src="{{ '/assets/images/cain-logo-800x283.png' | relative_url }}" alt="Climate AI Nordics" class="cain-corner-logo">
+          </a>
+        {% endif %}
+
+      </div>
+
+    </div>
+  </div>
+</article>
       {% endif %}
     {% endfor %}
 
