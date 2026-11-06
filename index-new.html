@@ -42,14 +42,28 @@ title: ""
   </div>
 
   <section class="seminars-list">
-    {% assign current_timestamp = 'now' | date: '%s' | plus: 0 %}
+    {% assign now_unix = 'now' | date: '%s' | plus: 0 %}
+
     {% assign sorted_seminars = site.data.seminars | sort: "date" %}
     {% assign count_upcoming = 0 %}
 
     {% for seminar in sorted_seminars %}
-      {% capture seminar_datetime_str %}{{ seminar.date }} {{ seminar.time | default: '15:00' }}{% endcapture %}
-      {% assign seminar_timestamp = seminar_datetime_str | date: '%s' | plus: 0 %}
-      {% if seminar_timestamp <= current_timestamp %}
+      {% comment %} Fallback to '15:00' if seminar.time is nil, empty string, or whitespace {% endcomment %}
+      {% assign cleaned_time = seminar.time | strip %}
+      {% if cleaned_time == nil or cleaned_time == "" %}
+        {% assign seminar_time = "15:00" %}
+      {% else %}
+        {% assign seminar_time = cleaned_time | split: ' ' | first %}
+      {% endif %}
+
+      {% comment %} Build ISO-8601 string: YYYY-MM-DDTHH:MM:00 {% endcomment %}
+      {% capture iso_dt %}{{ seminar.date | strip }}T{{ seminar_time }}:00{% endcapture %}
+      {% assign seminar_unix = iso_dt | date: '%s' | plus: 0 %}
+
+      {% comment %}
+        Keep on index only if the seminar start time is in the future (> now)
+      {% endcomment %}
+      {% if seminar_unix > now_unix %}
 
         {% assign count_upcoming = count_upcoming | plus: 1 %}
           <article class="seminar-card" id="{{ seminar.date }}">
