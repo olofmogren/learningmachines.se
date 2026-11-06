@@ -21,12 +21,18 @@
   </div>
 </footer>
 
-<img
-  src="https://data.learningmachines.se/pixel.gif?p={{ page.url | url_encode }}&ref={{ site.url | url_encode }}"
-  alt=""
-  width="1"
-  height="1"
-  style="position:absolute;left:-9999px;opacity:0;pointer-events:none;"
-  aria-hidden="true"
-  loading="eager"
->
+<script>
+  (function() {
+    const ts = Date.now();
+    const page = encodeURIComponent(window.location.pathname);
+    const ref = encodeURIComponent(document.referrer);
+    const pixelUrl = 'https://data.learningmachines.se/pixel.gif?p=' + page + '&r=' + ref + '&_nocache=' + ts;
+
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon(pixelUrl);
+    } else {
+      new Image().src = pixelUrl;
+    }
+  })();
+</script>
+
