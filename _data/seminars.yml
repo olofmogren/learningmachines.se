@@ -20,11 +20,22 @@
 - id: '2027-01-28'
   date: '2027-01-28'
   speaker: Nicola Messina
-  title: ''
+  title: A journey through fine-grained vision-language understanding under limited
+    supervision
   affiliation: ISTI-CNR
   time: 15:00 CET
   location: Sweden / Live Stream
   photo: /assets/images/speakers/2027-01-28-nicola-messina.jpg
+  abstract: 'Recent vision-language models (VLMs) have demonstrated remarkable capabilities
+    in capturing global visual semantics, yet they often struggle to understand fine-grained
+    details. This is especially true in scenarios where we lack fine-grained training
+    data, and we have to rely on weakly-supervised methodologies. This talk will be
+    devoted to the exploration of the different dimensions of fine-grained" perception:
+    from the semantic nuances (i.e.'
+  bio: distinguishing a wooden chair from a plastic one) up to spatial awareness
+  registration_url: I will examine the current limitations of large-scale pretrained
+    models like CLIP in solving such problems
+  youtube_id: '62207309827'
   is_cain: false
 - id: '2027-01-14'
   date: '2027-01-14'
@@ -4921,4 +4932,3 @@
   photo: /assets/images/speakers/2020-10-22-fredrik-carlsson.jpg
   youtube_id: ewNiLzAECOs
   is_cain: false
-
