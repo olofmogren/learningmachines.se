@@ -98,6 +98,8 @@ title: ""
               </div>
 
               <div class="seminar-info">
+                {% assign cleaned_role = seminar.speaker_title | default: seminar.role | default: seminar.position | strip %}
+
                 {% if cleaned_title != "" and cleaned_title != nil %}
                   <h2 class="seminar-title">{{ cleaned_title }}</h2>
 
@@ -113,13 +115,18 @@ title: ""
                 {% else %}
                   <h2 class="seminar-title">{{ seminar.speaker | default: "Upcoming seminar" }}</h2>
 
-                  {% if (cleaned_role != "" and cleaned_role != nil) or (cleaned_affiliation != "" and cleaned_affiliation != nil) %}
+                  {% assign has_role = false %}
+                  {% assign has_affil = false %}
+                  {% if cleaned_role != "" and cleaned_role != nil %}{% assign has_role = true %}{% endif %}
+                  {% if cleaned_affiliation != "" and cleaned_affiliation != nil %}{% assign has_affil = true %}{% endif %}
+
+                  {% if has_role or has_affil %}
                     <div class="speaker-meta">
-                      {% if cleaned_role != "" and cleaned_role != nil %}
+                      {% if has_role %}
                         <span class="speaker-role">{{ cleaned_role }}</span>
                       {% endif %}
-                      {% if cleaned_affiliation != "" and cleaned_affiliation != nil %}
-                        <span class="affiliation">{% if cleaned_role != "" and cleaned_role != nil %} — {% endif %}{{ cleaned_affiliation }}</span>
+                      {% if has_affil %}
+                        <span class="affiliation">{% if has_role %} — {% endif %}{{ cleaned_affiliation }}</span>
                       {% endif %}
                     </div>
                   {% endif %}
