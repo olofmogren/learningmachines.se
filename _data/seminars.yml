@@ -91,6 +91,17 @@
   time: 15:00 CET
   location: Sweden / Live Stream
   photo: /assets/images/speakers/2026-12-17-lester-jame-miranda.jpg
+  bio: Lester James V. Miranda is a PhD student at the University of Cambridge’s Language
+    Technology Laboratory, working with Anna Korhonen on equitable, multilingual natural
+    language processing. His research focuses on building small, specialized, and
+    cost-effective language models for edge deployment—particularly for underserved
+    communities and Filipino NLP—with publications at top-tier venues including ACL,
+    EMNLP, and NAACL. Prior to his PhD, he spent over seven years in industry and
+    research, including roles as a predoctoral researcher at the Allen Institute for
+    AI (Ai2), an open-source engineer working on spaCy and Prodigy at Explosion, a
+    technology consultant in the Philippines, and a bioinformatics researcher studying
+    protein function prediction. Outside of research, he enjoys photography and indie
+    game development.
   is_cain: false
 - id: '2026-12-03'
   date: '2026-12-03'
