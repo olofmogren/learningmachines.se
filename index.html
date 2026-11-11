@@ -190,7 +190,7 @@ title: ""
 
     {% if count_upcoming == 0 %}
       <div style="text-align: center; padding: 50px 0; color: var(--text-muted);">
-        <p>No upcoming seminars currently scheduled. Check back soon or <a href="{{ '/history.html' | relative_url }}" style="color: var(--accent-cyan);">explore the archive</a>.</p>
+        <p>No upcoming seminars currently scheduled. Check back soon or <a href="{{ '/history/' | relative_url }}" style="color: var(--accent-cyan);">explore the archive</a>.</p>
       </div>
     {% endif %}
   </section>
@@ -228,9 +228,9 @@ title: ""
     if (/^\d{4}-\d{2}-\d{2}$/.test(hash)) {
       const today = new Date().toISOString().split('T')[0];
 
-      // If the target date is in the past, redirect to history.html preserving the anchor
+      // If the target date is in the past, redirect to history/ preserving the anchor
       if (hash < today) {
-        window.location.replace("{{ '/history.html' | relative_url }}#" + hash);
+        window.location.replace("{{ '/history/' | relative_url }}#" + hash);
         return;
       }
 
