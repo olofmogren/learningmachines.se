@@ -66,6 +66,12 @@ title: ""
       {% if seminar_unix > now_unix %}
 
         {% assign count_upcoming = count_upcoming | plus: 1 %}
+        {% assign cleaned_title = seminar.title | strip %}
+        {% assign cleaned_abstract = seminar.abstract | strip %}
+        {% assign cleaned_bio = seminar.bio | strip %}
+        {% assign cleaned_role = seminar.role | strip %}
+        {% assign cleaned_affiliation = seminar.affiliation | strip %}
+
           <article class="seminar-card" id="{{ seminar.date }}">
             <div class="seminar-header">
               <span>📅 {{ seminar.date }} &bull; {{ seminar.time | default: "15:00 CET" }}</span>
@@ -92,26 +98,46 @@ title: ""
               </div>
 
               <div class="seminar-info">
-                <h2 class="seminar-title">{{ seminar.title | default: "Upcoming seminar" }}</h2>
+                {% if cleaned_title != "" and cleaned_title != nil %}
+                  <h2 class="seminar-title">{{ cleaned_title }}</h2>
 
-                <div class="speaker-meta">
-                  {{ seminar.speaker }}
-                  {% if seminar.affiliation and seminar.affiliation != "" %}
-                    <span class="affiliation">— {{ seminar.affiliation }}</span>
+                  <div class="speaker-meta">
+                    {{ seminar.speaker }}
+                    {% if cleaned_role != "" and cleaned_role != nil %}
+                      <span class="speaker-role">, {{ cleaned_role }}</span>
+                    {% endif %}
+                    {% if cleaned_affiliation != "" and cleaned_affiliation != nil %}
+                      <span class="affiliation">— {{ cleaned_affiliation }}</span>
+                    {% endif %}
+                  </div>
+                {% else %}
+                  <h2 class="seminar-title">{{ seminar.speaker | default: "Upcoming seminar" }}</h2>
+
+                  {% if (cleaned_role != "" and cleaned_role != nil) or (cleaned_affiliation != "" and cleaned_affiliation != nil) %}
+                    <div class="speaker-meta">
+                      {% if cleaned_role != "" and cleaned_role != nil %}
+                        <span class="speaker-role">{{ cleaned_role }}</span>
+                      {% endif %}
+                      {% if cleaned_affiliation != "" and cleaned_affiliation != nil %}
+                        <span class="affiliation">{% if cleaned_role != "" and cleaned_role != nil %} — {% endif %}{{ cleaned_affiliation }}</span>
+                      {% endif %}
+                    </div>
                   {% endif %}
-                </div>
-
-                {% if seminar.abstract and seminar.abstract != "" %}
-                  <p class="seminar-abstract">{{ seminar.abstract }}</p>
                 {% endif %}
 
-                {% if seminar.bio and seminar.bio != "" %}
-                  <details class="speaker-bio-details">
-                    <summary>About {{ seminar.speaker | split: ' ' | first | default: "the speaker" }}</summary>
-                    <div class="bio-content">
-                      <p>{{ seminar.bio }}</p>
-                    </div>
-                  </details>
+                {% if cleaned_abstract != "" and cleaned_abstract != nil %}
+                  <p class="seminar-abstract">{{ cleaned_abstract }}</p>
+
+                  {% if cleaned_bio != "" and cleaned_bio != nil %}
+                    <details class="speaker-bio-details">
+                      <summary>About {{ seminar.speaker | split: ' ' | first | default: "the speaker" }}</summary>
+                      <div class="bio-content">
+                        <p>{{ cleaned_bio }}</p>
+                      </div>
+                    </details>
+                  {% endif %}
+                {% elsif cleaned_bio != "" and cleaned_bio != nil %}
+                  <p class="seminar-abstract">{{ cleaned_bio }}</p>
                 {% endif %}
 
                 <!-- Expandable Physical Venue Details -->
