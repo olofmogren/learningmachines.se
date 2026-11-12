@@ -105,13 +105,12 @@
   is_cain: true
 - id: '2026-12-17'
   date: '2026-12-17'
-  speaker: Lester Jame Miranda
+  speaker: Lester James Miranda
   speaker_title: PhD candidate
   title: Language AI for the edge - A data-centric approach
   affiliation: PhD candidate, University of Cambridge
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2026-12-17-lester-jame-miranda.jpg
   abstract: 'The prevailing recipe for building language models is that bigger is
     better: more data, more parameters, and more compute. Although this paradigm has
     produced remarkable frontier models that we use today, there is still a large
