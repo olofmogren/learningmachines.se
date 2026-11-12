@@ -9,3 +9,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+collections:
+  talks:
+    output: true
+    permalink: /talks/:name/

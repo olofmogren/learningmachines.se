@@ -1,0 +1,40 @@
+---
+layout: default
+---
+{% assign seminar = site.data.seminars | where: "date", page.seminar_date | first %}
+
+<div class="container" style="padding: 40px 0;">
+  <article class="seminar-card">
+    <div class="seminar-header">
+      <span>📅 {{ seminar.date }} &bull; {{ seminar.time | default: "15:00 CET" }}</span>
+    </div>
+    <div class="seminar-body">
+      <div class="speaker-column">
+        {% if seminar.photo and seminar.photo != "" %}
+          <img src="{{ seminar.photo }}" alt="{{ seminar.speaker }}" class="speaker-avatar">
+        {% else %}
+          <img src="{{ '/assets/images/lm-logo.svg' | relative_url }}" alt="Learning Machines" class="speaker-avatar">
+        {% endif %}
+      </div>
+      <div class="seminar-info">
+        <h1 class="seminar-title">{{ seminar.title | default: seminar.speaker }}</h1>
+        <div class="speaker-meta">
+          {{ seminar.speaker }}
+          {% if seminar.affiliation and seminar.affiliation != "" %}
+            <span class="affiliation">— {{ seminar.affiliation }}</span>
+          {% endif %}
+        </div>
+        {% if seminar.abstract and seminar.abstract != "" %}
+          <p class="seminar-abstract">{{ seminar.abstract }}</p>
+        {% endif %}
+        {% if seminar.bio and seminar.bio != "" %}
+          <div class="bio-content"><p>{{ seminar.bio }}</p></div>
+        {% endif %}
+      </div>
+    </div>
+  </article>
+
+  <p style="margin-top: 20px;">
+    <a href="{{ '/history/#' | append: seminar.date | relative_url }}">&larr; View all past seminars</a>
+  </p>
+</div>
