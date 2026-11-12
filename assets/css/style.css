@@ -1018,3 +1018,23 @@ body.has-hero .site-header.scrolled .brand-link {
   display: block;
   filter: none !important;
 }
+
+/* Default inline link styling */
+a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.35);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+a:hover {
+  color: #7dd3fc;
+  border-bottom-color: currentColor;
+}
+
+/* Prevent underline borders on button/nav/card-header links */
+a[class*="btn-"],
+nav a,
+.coorganized-cain-corner {
+  border-bottom: none;
+}

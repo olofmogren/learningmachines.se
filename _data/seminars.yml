@@ -28,15 +28,15 @@
     University of Rome, working with Emanuele Rodolà. His research explores how machine
     learning, particularly multimodal models and mechanistic interpretability, can
     decode wild animal communication, shedding light on animal intelligence, consciousness,
-    and humanity's relationship with the natural world. His recent work includes OpenWhistle,
-    the largest open dataset of dolphin whistles (accepted as a NeurIPS 2026 Spotlight).
-    Prior to focusing on bioacoustics and animal communication, he developed generative
-    models for structural biology and drug discovery at Vant AI and worked at Fabula
-    AI, a deep learning startup for fake news detection later acquired by Twitter.
-    He earned his PhD in Graph Neural Networks between Imperial College London and
-    Twitter under the supervision of Michael Bronstein, and holds computer science
-    degrees from Imperial College London and the University of Cambridge. Outside
-    of research, he enjoys scuba diving and hiking.
+    and humanity&#x27;s relationship with the natural world. His recent work includes
+    OpenWhistle, the largest open dataset of dolphin whistles (accepted as a NeurIPS
+    2026 Spotlight). Prior to focusing on bioacoustics and animal communication, he
+    developed generative models for structural biology and drug discovery at Vant
+    AI and worked at Fabula AI, a deep learning startup for fake news detection later
+    acquired by Twitter. He earned his PhD in Graph Neural Networks between Imperial
+    College London and Twitter under the supervision of Michael Bronstein, and holds
+    computer science degrees from Imperial College London and the University of Cambridge.
+    Outside of research, he enjoys scuba diving and hiking.
   is_cain: true
 - id: '2027-01-28'
   date: '2027-01-28'
@@ -51,19 +51,19 @@
     in capturing global visual semantics, yet they often struggle to understand fine-grained
     details. This is especially true in scenarios where we lack fine-grained training
     data, and we have to rely on weakly-supervised methodologies. This talk will be
-    devoted to the exploration of the different dimensions of "fine-grained" perception:
-    from the semantic nuances (i.e., distinguishing a wooden chair from a plastic
-    one) up to spatial awareness, where the model should be able to effectively embed
-    meaningful information from specific spatial locations in the image. I will address
-    these topics by traversing different downstream tasks which require fine-grained
+    devoted to the exploration of the different dimensions of &quot;fine-grained&quot;
+    perception: from the semantic nuances (i.e., distinguishing a wooden chair from
+    a plastic one) up to spatial awareness, where the model should be able to effectively
+    embed meaningful information from specific spatial locations in the image. I will
+    address these topics by traversing different downstream tasks which require fine-grained
     spatial and semantic abilities, from fine-grained open-vocabulary object detection
     to zero-shot segmentation and zero-shot image captioning. Within this talk, I
     will examine the current limitations of large-scale pretrained models like CLIP
     in solving such problems, and I will propose possible solutions ranging from specialized
     benchmarks and datasets to novel architectures. The proposed approaches aim to
-    address the "blind spots" of current models through targeted fine-tuning of existing
-    multimodal backbones or by leveraging recent promising self-supervised vision
-    models, paving the way towards more generalizable and data-efficient methods.'
+    address the &quot;blind spots&quot; of current models through targeted fine-tuning
+    of existing multimodal backbones or by leveraging recent promising self-supervised
+    vision models, paving the way towards more generalizable and data-efficient methods.'
   bio: Nicola Messina is a researcher at the Artificial Intelligence for Media and
     Humanities (AIMH) laboratory at ISTI-CNR in Pisa, Italy. He received his Ph.D.
     in Information Engineering from the University of Pisa in 2022. His research focuses
@@ -364,7 +364,8 @@
     Aurora represents a notable step towards democratizing accurate and efficient
     Earth system predictions. These results highlight the transformative potential
     of AI in environmental forecasting and pave the way for broader accessibility
-    to high-quality climate and weather information. Link to paper: https://www.nature.com/articles/s41586-025-09005-y'
+    to high-quality climate and weather information. Link to paper: <a href="https://www.nature.com/articles/s41586-025-09005-y"
+    target="_blank" rel="noopener noreferrer">https://www.nature.com/articles/s41586-025-09005-y</a>'
   bio: Ana Lucic is an assistant professor in artificial intelligence at the University
     of Amsterdam working on interpretability, AI for science and AI safety. Previously,
     she was a researcher at Microsoft Research Amsterdam and at the Partnership on
@@ -458,7 +459,7 @@
     He studies self-organisation in decentralised socio-technical systems, with work
     on social norms, coordination and cultural evolution. He also has a broader interest
     in climate-related challenges, including socio-political climate communication
-    and aligning AI systems with climate goals. Previously, he completed a Master's
+    and aligning AI systems with climate goals. Previously, he completed a Master&#x27;s
     in Theoretical Physics at Imperial College London, and he continues to draw on
     methods from network science and statistical physics in his current research.
     His work has been published in Science Advances and has received international
@@ -518,15 +519,15 @@
   photo: /assets/images/speakers/2026-06-11-gustau-camps-valls.jpg
   abstract: 'I will give a sarcastic and quite op-ed tour trying to explain why XAI
     is misleading us. Everything from SHAP plots to counterfactuals may look trustworthy,
-    but underneath, they''re often driven by correlations, not causation. In fields
-    like climate, neuroscience and social sciences, that''s a serious risk. Inspired
+    but underneath, they&#x27;re often driven by correlations, not causation. In fields
+    like climate, neuroscience and social sciences, that&#x27;s a serious risk. Inspired
     by philosophy of science, I argue that explanations must go beyond surface patterns.
     Fortunately, the frontier is moving fast: causal‐informed SHAP, meaningful counterfactuals
-    (you can''t go younger), causal certification in explanations, and structural
-    causal modeling are all promising. Yet, it''s time we treat XAI not just as a
-    cosmetic fix, but as a tool grounded in truth: seamful, thought-provoking, and
-    scientifically defensible. And if time allows I''d like to say a few words about
-    why AI needs a new philosophy of science.'
+    (you can&#x27;t go younger), causal certification in explanations, and structural
+    causal modeling are all promising. Yet, it&#x27;s time we treat XAI not just as
+    a cosmetic fix, but as a tool grounded in truth: seamful, thought-provoking, and
+    scientifically defensible. And if time allows I&#x27;d like to say a few words
+    about why AI needs a new philosophy of science.'
   bio: Gustau Camps-Valls is a Full Professor of Electrical Engineering at the Universitat
     de València, where he leads the Image and Signal Processing (ISP) group. His research
     lives at the intersection of machine learning and Earth system science, focusing
@@ -538,7 +539,8 @@
     and Synergy grants, and he was recently awarded the 2025 Blaise Pascal Medal.
     Beyond his research, he serves as a convener for the United Nations’ ITU AI for
     Good seminar series and holds visiting positions at the Institut Polytechnique
-    de Paris and the Max Planck Institute. https://isp.uv.es
+    de Paris and the Max Planck Institute. <a href="https://isp.uv.es" target="_blank"
+    rel="noopener noreferrer">https://isp.uv.es</a>
   youtube_id: saoF4x7ZpsQ
   is_cain: true
 - id: '2026-05-28'
@@ -564,15 +566,15 @@
     temporal windows, geographic locations, and sensors. EarthShift provides a testbed
     to guide future work to create foundation models that are robust and reliable
     in real-world applications.'
-  bio: Kelsey Doerksen is a joint postdoctoral fellow at the University of Cape Town's
+  bio: Kelsey Doerksen is a joint postdoctoral fellow at the University of Cape Town&#x27;s
     Climate Risk Lab and Arizona State University in the School of Augmented Intelligence
     and Computing and research affiliate at the NASA Jet Propulsion Laboratory. Her
     research focuses on combining her expertise in AI, Earth Observation, and Foundation
     Models to applied problems in the climate, food security, and biodiversity domains.
     She is a recent graduate from the Autonomous Intelligent Machines where she completed
-    her thesis in the Oxford Applied and Theoretical Machine Learning Group on "Applied
-    Machine Learning for Earth Systems Science", collaborating with the United Nations,
-    European Space Agency and NASA during her PhD.
+    her thesis in the Oxford Applied and Theoretical Machine Learning Group on &quot;Applied
+    Machine Learning for Earth Systems Science&quot;, collaborating with the United
+    Nations, European Space Agency and NASA during her PhD.
   youtube_id: v8bGOmmITJw
   is_cain: true
 - id: '2026-05-07'
@@ -656,8 +658,8 @@
 
 
     His research spans a wide range of species—from farm animals such as pigs to marine
-    mammals like whales—and he was featured in the documentary "If Pigs Could Talk,"
-    recently broadcast across Europe, including Sweden.
+    mammals like whales—and he was featured in the documentary &quot;If Pigs Could
+    Talk,&quot; recently broadcast across Europe, including Sweden.
 
 
     2024 he published an article in Science exploring how AI and bioacoustics can
@@ -889,12 +891,12 @@
   bio: Kalle Åström is a professor at the Centre for Mathematical Sciences at Lund
     University. His research spans from basic research in algebraic geometry to applied
     mathematical research, machine learning, medical image analysis, computer vision
-    and to dissemination in industry and society. His master's thesis on autonomous
+    and to dissemination in industry and society. His master&#x27;s thesis on autonomous
     vehicles was awarded first prize in Innovation Cup, 1991. The dissertation from
     1996, won prize as best Nordic dissertation in machine learning and image analysis.
     He is the founder of several companies, Neuromathic, Spiideo, Cognimatics and
-    Decuma, where Decuma won the EU's "IST grand prize" in 2005. He has been main
-    or co-supervisor for 35 PhD students.
+    Decuma, where Decuma won the EU&#x27;s &quot;IST grand prize&quot; in 2005. He
+    has been main or co-supervisor for 35 PhD students.
   registration_url: extra2
   youtube_id: GzTXDvapBZE
   is_cain: false
@@ -970,8 +972,8 @@
     robust feature representations that require minimal labeled data for fine-tuning
     on specific SAR tasks. However, in preliminary experiments, we found that the
     domain gap is too large for the task of extracting calving fronts from SAR imagery,
-    and foundation models fine-tuned on the "CAlving Fronts and where to Find thEm"
-    (CaFFe) benchmark dataset performed subpar.
+    and foundation models fine-tuned on the &quot;CAlving Fronts and where to Find
+    thEm&quot; (CaFFe) benchmark dataset performed subpar.
 
 
     Therefore, we compiled an unlabeled dataset of Sentinel-1 SAR image sequences
@@ -1020,9 +1022,9 @@
     simulations of PDEs, reduced-order models, neural emulators, optimization theory,
     automatic differentiation and adjoint methods. In particular, he is interested
     in discovering deep insights on neural networks solving physics problems, e.g.,
-    in fluid or structural mechanics. He holds an M.Sc. in Computational Science &
+    in fluid or structural mechanics. He holds an M.Sc. in Computational Science &amp;
     Engineering from TUM. Besides research, he works on free educational material
-    covering Machine Learning & Simulation on his YouTube channel.
+    covering Machine Learning &amp; Simulation on his YouTube channel.
   registration_url: extra2
   is_cain: false
 - id: '2025-10-16'
@@ -1146,7 +1148,7 @@
     First, I will introduce FlowEO, a generative approach of Unsupervised Domain Adaptation
     (UDA) for Earth observation, and show its high performance in UDA scenarios for
     several downstream tasks, including dense prediction and classification. This
-    flow-matching-based translation method improves pretrained predictive models''
+    flow-matching-based translation method improves pretrained predictive models&#x27;
     accuracies in challenging scenarios such as post-disaster response and high cloud
     coverage cases with SAR-to-optical translation. FlowEO’s generative domain adaptation
     method is independent of the downstream task and does not require retraining the
@@ -1192,13 +1194,13 @@
 
 
     In this paper, we introduce and rigorously evaluate two novel correction methods—linear
-    calibration correction and Tweedie''s correction—that substantially reduce prediction
-    bias without relying on newly collected labeled data. Our methods operate on out-of-sample
-    predictions from pre-trained models, treating these models as black-box functions.
-    Linear calibration corrects bias through a straightforward linear transformation
-    derived from held-out calibration data, while Tweedie''s correction leverages
-    empirical Bayes principles to directly address shrinkage-induced biases by exploiting
-    score functions derived from predicted outcomes.
+    calibration correction and Tweedie&#x27;s correction—that substantially reduce
+    prediction bias without relying on newly collected labeled data. Our methods operate
+    on out-of-sample predictions from pre-trained models, treating these models as
+    black-box functions. Linear calibration corrects bias through a straightforward
+    linear transformation derived from held-out calibration data, while Tweedie&#x27;s
+    correction leverages empirical Bayes principles to directly address shrinkage-induced
+    biases by exploiting score functions derived from predicted outcomes.
 
 
     Through analytical exercises and experiments using Demographic and Health Survey
@@ -1225,15 +1227,15 @@
   time: 15:00 CET
   location: Sweden / Live Stream
   photo: /assets/images/speakers/2025-06-19-lily-xu.jpg
-  abstract: Like many of society's grand challenges, biodiversity conservation requires
-    effectively allocating and managing our limited resources in the face of imperfect
-    information. My research develops data-driven AI decision-making methods to do
-    so, overcoming the messy data ubiquitous in these settings. Here, I’ll present
-    technical advances in machine learning, reinforcement learning, and causal inference,
-    addressing research questions that emerged from on-the-ground challenges in wildlife
-    conservation. I’ll also discuss bridging the gap from research and practice, with
-    anti-poaching field tests in Cambodia, field visits in Belize and Uganda, and
-    large-scale deployment with SMART conservation software.
+  abstract: Like many of society&#x27;s grand challenges, biodiversity conservation
+    requires effectively allocating and managing our limited resources in the face
+    of imperfect information. My research develops data-driven AI decision-making
+    methods to do so, overcoming the messy data ubiquitous in these settings. Here,
+    I’ll present technical advances in machine learning, reinforcement learning, and
+    causal inference, addressing research questions that emerged from on-the-ground
+    challenges in wildlife conservation. I’ll also discuss bridging the gap from research
+    and practice, with anti-poaching field tests in Cambodia, field visits in Belize
+    and Uganda, and large-scale deployment with SMART conservation software.
   bio: Lily Xu is a computer scientist developing methods across machine learning,
     optimization, and causal inference for environmental management. She aims to enable
     practitioners to make effective decisions in the face of limited data, taking
@@ -1441,7 +1443,7 @@
   location: Sweden / Live Stream
   photo: /assets/images/speakers/2025-03-27-maria-j.-molina.jpg
   abstract: 'Machine learning can be used for Earth system prediction, or to study
-    the uppermost limit of prediction skill theoretically achievable given the system''s
+    the uppermost limit of prediction skill theoretically achievable given the system&#x27;s
     initial state or other factors, otherwise known as predictability. In traditional
     numerical weather prediction frameworks, we solve the governing partial differential
     equations starting from an initial state. This initialized prediction framework
@@ -1493,28 +1495,28 @@
 
 
     [1] Sonal Kumar, Prem Seetharaman, Justin Salamon, Dinesh Manocha, Oriol Nieto,
-    "SILA: Signal-to-Language Augmentation for Enhanced Control in Text-to-Audio Generation",
-    In review for IEEE SPL
+    &quot;SILA: Signal-to-Language Augmentation for Enhanced Control in Text-to-Audio
+    Generation&quot;, In review for IEEE SPL
 
 
     [2] Hugo Flores García, Oriol Nieto, Justin Salamon, Bryan Pardo, Prem Seetharaman,
-    "Sketch2Sound: Controllable Audio Generation via Time-Varying Signals and Sonic
-    Imitations", ICASSP 2025
+    &quot;Sketch2Sound: Controllable Audio Generation via Time-Varying Signals and
+    Sonic Imitations&quot;, ICASSP 2025
 
 
     [3] Ziyang Chen, Prem Seetharaman, Bryan Russell, Oriol Nieto, David Bourgin,
-    Andrew Owens, Justin Salamon, "Video-Guided Foley Sound Generation with Multimodal
-    Controls", In review for CVPR 2025'
+    Andrew Owens, Justin Salamon, &quot;Video-Guided Foley Sound Generation with Multimodal
+    Controls&quot;, In review for CVPR 2025'
   bio: Oriol is a Senior Research Engineer at Adobe Research, where he focuses on
     human-centered AI for audio creativity, encompassing everything from music to
     audiobooks, video editing, and sound design. He holds a PhD in Music Technology
-    from MARL, NYU, a Master's in Music, Science, and Technology from Stanford University,
-    and a Master's in Information Technologies from Pompeu Fabra University. Highly
-    involved with the Music Information Retrieval community, he was one of the three
-    General Chairs for ISMIR 2024 in San Francisco this past November. Oriol has helped
-    develop relevant open-source MIR packages such as librosa, mir-eval, and MSAF;
-    contributed to PyTorch; and plays guitar, violin, cajón, and sings (and screams)
-    in his spare time.
+    from MARL, NYU, a Master&#x27;s in Music, Science, and Technology from Stanford
+    University, and a Master&#x27;s in Information Technologies from Pompeu Fabra
+    University. Highly involved with the Music Information Retrieval community, he
+    was one of the three General Chairs for ISMIR 2024 in San Francisco this past
+    November. Oriol has helped develop relevant open-source MIR packages such as librosa,
+    mir-eval, and MSAF; contributed to PyTorch; and plays guitar, violin, cajón, and
+    sings (and screams) in his spare time.
   registration_url: extra2
   youtube_id: AbFT6IJC9cM
   is_cain: false
@@ -1540,7 +1542,8 @@
     uncertainty than using only the ground truth and ignoring the map product.
 
 
-    Paper: https://arxiv.org/abs/2407.13659'
+    Paper: <a href="https://arxiv.org/abs/2407.13659" target="_blank" rel="noopener
+    noreferrer">https://arxiv.org/abs/2407.13659</a>'
   bio: 'Sherrie Wang’s research uses novel data and computational algorithms to monitor
     our planet and enable sustainable development. Her focus is on improving agricultural
     management and mitigating climate change, especially in low- or middle-income
@@ -1570,11 +1573,11 @@
   photo: /assets/images/speakers/2025-03-06-atakan-aral.jpg
   abstract: 'The integration of Edge Computing and Artificial Intelligence (i.e.,
     Edge AI) unlocks new possibilities for remote monitoring of water quality across
-    diverse environments. This talk will explore the dual aspects of "remote" monitoring:
-    (1) collecting water quality data in geographically remote regions with limited
-    energy and connectivity and (2) using connected water quality sensors to gain
-    real-time insights remotely. By deploying low-power or energy-harvesting sensors
-    and learning from data in close proximity to sensors, we can improve efficiency,
+    diverse environments. This talk will explore the dual aspects of &quot;remote&quot;
+    monitoring: (1) collecting water quality data in geographically remote regions
+    with limited energy and connectivity and (2) using connected water quality sensors
+    to gain real-time insights remotely. By deploying low-power or energy-harvesting
+    sensors and learning from data in close proximity to sensors, we can improve efficiency,
     reduce latency, and maintain learning performance in challenging environments
     without reliable communication and energy infrastructures. The presentation will
     showcase two real-world case studies in river pollution source identification
@@ -1584,7 +1587,7 @@
     he was a tenure-track assistant professor of Distributed Systems at Umeå University,
     Sweden, and a postdoctoral fellow at the Data Science group at TU Wien, Austria.
     His research interests center around optimizing resource utilization and placement
-    at the network's edge for data-driven workloads. He received a dual MSc degree
+    at the network&#x27;s edge for data-driven workloads. He received a dual MSc degree
     in Computer Science and Engineering from Politecnico di Milano (2011) and Istanbul
     Technical University (2012), and a PhD in Computer Engineering from Istanbul Technical
     University (2016). Atakan has been granted two EIC Pathfinder CHIST-ERA projects
@@ -1648,12 +1651,13 @@
     detect visually.
 
 
-    The "Towards a Transnational Acoustic Biodiversity Monitoring Network" (TABMON)
-    project is an initiative to establish a transnational passive acoustic monitoring
-    monitoring network using autonomous acoustic sensors across four different European
-    countries: Norway, Netherlands, France and Spain. TABMON’s objective is to demonstrate
-    how acoustic sensing, coupled with cutting-edge AI, can complement traditional
-    monitoring methods and support the development of methods to better monitor biodiversity.
+    The &quot;Towards a Transnational Acoustic Biodiversity Monitoring Network&quot;
+    (TABMON) project is an initiative to establish a transnational passive acoustic
+    monitoring monitoring network using autonomous acoustic sensors across four different
+    European countries: Norway, Netherlands, France and Spain. TABMON’s objective
+    is to demonstrate how acoustic sensing, coupled with cutting-edge AI, can complement
+    traditional monitoring methods and support the development of methods to better
+    monitor biodiversity.
 
 
     In this talk, we will also share our experiences with the deployment of acoustic
@@ -1755,7 +1759,7 @@
     headed and how we take this to heart at Sana.
 
 
-    We''ll dive deep into the lessons we’ve learned from building Retrieval-Augmented
+    We&#x27;ll dive deep into the lessons we’ve learned from building Retrieval-Augmented
     Generation (RAG) in real-world contexts, examining how recent advances in test-time
     compute and agent architectures are reshaping our approach. Central to this exploration
     is how Large Language Models (LLMs) are fundamentally reimagining document understanding
@@ -1822,18 +1826,18 @@
     \ incremental and transformational change across multiple sectors, focusing on\
     \ industries with large carbon footprints.\n\nI highlight barriers and risks to\
     \ the adoption of AI, including the carbon footprint of AI usage worldwide. I\
-    \ focus on the multiple definitions (and ultimate importance) of \"trust in AI\"\
-    \ and its impact on the integration of AI into complex workflows. \n\nThis talk\
-    \ is for AI practitioners looking to understand how AI fits into the bigger picture\
-    \ of climate change. I highlight opportunities and challenges in each sector that\
-    \ I hope will motivate collaboration across academia and industry."
+    \ focus on the multiple definitions (and ultimate importance) of &quot;trust in\
+    \ AI&quot; and its impact on the integration of AI into complex workflows. \n\n\
+    This talk is for AI practitioners looking to understand how AI fits into the bigger\
+    \ picture of climate change. I highlight opportunities and challenges in each\
+    \ sector that I hope will motivate collaboration across academia and industry."
   bio: Alp is chief scientist at Fero Labs (factory optimization software for industrial
     decarbonization) and adjunct professor of computer science at Columbia University
-    (teaching "Machine Learning & Climate"). He recently co-authored a report "Artificial
-    Intelligence for Climate Change Roadmap (Second Edition)", which was launched
-    at COP29. He holds a Ph.D. from Yale University, where his research won a best
-    thesis award. He is part of the core team on entrepreneurship at Climate Change
-    AI.
+    (teaching &quot;Machine Learning &amp; Climate&quot;). He recently co-authored
+    a report &quot;Artificial Intelligence for Climate Change Roadmap (Second Edition)&quot;,
+    which was launched at COP29. He holds a Ph.D. from Yale University, where his
+    research won a best thesis award. He is part of the core team on entrepreneurship
+    at Climate Change AI.
   registration_url: extra2
   youtube_id: n4uzazl1g4A
   is_cain: false
@@ -1862,7 +1866,8 @@
     University in 2020, where he is now a PhD student working on probabilistic machine
     learning. In his research he develops machine learning methods for data with spatial-,
     temporal- and graph-structure, including combinations of these. He is also interested
-    in applications of these methods to earth system modeling. https://joeloskarsson.github.io/
+    in applications of these methods to earth system modeling. <a href="https://joeloskarsson.github.io/"
+    target="_blank" rel="noopener noreferrer">https://joeloskarsson.github.io/</a>
   registration_url: extra2
   youtube_id: b2B9DYpFprc
   is_cain: true
@@ -1938,7 +1943,8 @@
     He is the consortium chair of the Swedish Biodiversity Data Infrastructure (www.biodiversitydata.se)
     and responsible for user support and research on the infrastructure. As part of
     this assignment he is in the organising committee for the upcoming a conference
-    on “Data-driven Ecology” https://biodiversitydata.se/event/sbdi-days-2024-towards-data-driven-ecology/.
+    on “Data-driven Ecology” <a href="https://biodiversitydata.se/event/sbdi-days-2024-towards-data-driven-ecology/"
+    target="_blank" rel="noopener noreferrer">https://biodiversitydata.se/event/sbdi-days-2024-towards-data-driven-ecology/</a>.
     He developed one of the leading eDNA labs in the country (SweDNA lab), also including
     a commercial branch (www.seanalytics.se) for DNA-based monitoring. Their tools
     and services are used in both in evolutionary biology as well as conservation
@@ -2122,15 +2128,16 @@
     individuals.
   bio: 'Jonas Hentati-Sundberg, Associate Professor in ecology at the Swedish University
     of Agricultural Sciences. Jonas obtained his PhD from Stockholm Resilience Centre
-    (Stockholm University) 2015. PhD thesis title: "SEA CHANGE - Social-ecological
-    co-evolution in Baltic Sea fisheries". His research interest concerns The use
-    of Ai for biodiversity monitoring and applied research, in particular using video
-    suveillance, animal-borne loggers and sailing drones, in marine systems. Novel
-    hydro-acoustical tools (eg. broadband hydroacoustics, marine drones) for fish
-    data collection, interactions between fish-eating seabirds (particularly common
-    guillemot), fish stocks and fisheries, and dynamics of linked social-ecological
+    (Stockholm University) 2015. PhD thesis title: &quot;SEA CHANGE - Social-ecological
+    co-evolution in Baltic Sea fisheries&quot;. His research interest concerns The
+    use of Ai for biodiversity monitoring and applied research, in particular using
+    video suveillance, animal-borne loggers and sailing drones, in marine systems.
+    Novel hydro-acoustical tools (eg. broadband hydroacoustics, marine drones) for
+    fish data collection, interactions between fish-eating seabirds (particularly
+    common guillemot), fish stocks and fisheries, and dynamics of linked social-ecological
     systems (such as fisheries) and the role of management in shaping fisheries and
-    other resource use systems. https://www.slu.se/cv/jonas-hentati-sundberg/'
+    other resource use systems. <a href="https://www.slu.se/cv/jonas-hentati-sundberg/"
+    target="_blank" rel="noopener noreferrer">https://www.slu.se/cv/jonas-hentati-sundberg/</a>'
   registration_url: extra2
   is_cain: false
 - id: '2024-05-23'
@@ -2195,7 +2202,8 @@
     degree in electronic and electrical engineering in 2019 from the University of
     Strathclyde in Glasgow, United Kingdom, and the Ph.D. degree in 2023 at the same
     institution, specialising in applications of computer vision to Earth observation
-    data. Homepage: https://mikonvergence.github.io/'
+    data. Homepage: <a href="https://mikonvergence.github.io/" target="_blank" rel="noopener
+    noreferrer">https://mikonvergence.github.io/</a>'
   registration_url: extra2
   youtube_id: -wShuLK2PI0
   is_cain: false
@@ -2310,7 +2318,8 @@
     generative modeling for drug discovery. Karsten is trained as a physicist and
     did his master’s in quantum information theory and his Ph.D. in computational
     and statistical physics, developing multiscale molecular dynamics simulation methods.
-    See his website https://karstenkreis.github.io/ for more details.
+    See his website <a href="https://karstenkreis.github.io/" target="_blank" rel="noopener
+    noreferrer">https://karstenkreis.github.io/</a> for more details.
   registration_url: extra2
   youtube_id: VmpujSkUjZc
   is_cain: false
@@ -2387,9 +2396,9 @@
     computational pathology. His research focuses on how to build and evaluate reliable
     machine learning models, and has often included regression problems, uncertainty
     estimation methods or energy-based models. He received his PhD in Machine Learning
-    in 2023 from Uppsala University for the thesis "Towards Accurate and Reliable
-    Deep Regression Models", and received his MSc in Electrical Engineering from Linköping
-    University in 2018.
+    in 2023 from Uppsala University for the thesis &quot;Towards Accurate and Reliable
+    Deep Regression Models&quot;, and received his MSc in Electrical Engineering from
+    Linköping University in 2018.
   registration_url: extra2
   youtube_id: QGGP1zsq7Sc
   is_cain: false
@@ -2656,8 +2665,8 @@
     reward function encapsulates the objective of an RL task, guiding the agent towards
     desirable outcomes. Value Functions: Value functions estimate the expected cumulative
     reward associated with a state or state-action pair, aiding in decision-making.
-    Policy: The policy defines the agent''s strategy for selecting actions in a given
-    state, shaping its behavior.
+    Policy: The policy defines the agent&#x27;s strategy for selecting actions in
+    a given state, shaping its behavior.
 
 
     The following algorithms will be presented presented: Dynamic programming. Temporal
@@ -2669,8 +2678,8 @@
     skills in mathematical simulation, optimization, and control theory. Subsequently,
     he applied these skills in the design of hybrid and electric vehicles for various
     OEMs. In 2016, he ventured into the field of reinforcement learning. Alongside
-    his studies, he has also supervised around 10 master's students, guiding them
-    in the application of reinforcement learning. In 2021, he received the prestigious
+    his studies, he has also supervised around 10 master&#x27;s students, guiding
+    them in the application of reinforcement learning. In 2021, he received the prestigious
     Volvo Group Inventor Award, which recognized his contributions to a patent involving
     the use of reinforcement learning for coordinating multiple autonomous vehicles.
   registration_url: extra2
@@ -2687,11 +2696,11 @@
   photo: /assets/images/speakers/2023-11-09-natasa-sladoje.jpg
   abstract: 'Multimodal imaging gives an opportunity to collect diverse and complementary
     information about a specimen, enabling a deeper understanding of complex interactions
-    of the specimen''s biological, chemical, dynamic, and other properties. For successful
-    correlation and fusion of information present in such diverse images, the images
-    need to be accurately aligned. Automated multimodal image registration is a very
-    challenging task, nowadays typically addressed by learning-based approaches. However,
-    iterative (non-learning based approaches) seem to still stand the competition.
+    of the specimen&#x27;s biological, chemical, dynamic, and other properties. For
+    successful correlation and fusion of information present in such diverse images,
+    the images need to be accurately aligned. Automated multimodal image registration
+    is a very challenging task, nowadays typically addressed by learning-based approaches.
+    However, iterative (non-learning based approaches) seem to still stand the competition.
 
 
     This talk will briefly introduce the topic of multimodal image registration, main
@@ -2702,7 +2711,7 @@
   bio: 'Nataša Sladoje is professor in computerised image analysis at the Department
     of Information Technology, Uppsala University.  She is the scientific leader of  MIDA
     - Methods for Image Data Analysis group, and the director of the Centre for Image
-    Analysis (Uppsala University). She is the initiator and coordinator of the Master''s
+    Analysis (Uppsala University). She is the initiator and coordinator of the Master&#x27;s
     programme in Image Analysis and Machine Learning at the IT Department at Uppsala
     University.
 
@@ -2787,11 +2796,11 @@
     on a variety of problems. This is a joint work with Yuyang Shi, Andrew Campbell
     and Arnaud Doucet.
   bio: Valentin De Bortoli is a research scientist at Google DeepMind in London, working
-    with Arnaud Doucet. Valentin's research interests are in stochastic methods for
-    generative modelling. In particular he studies theoretical/practical aspects of
-    deep learning for data generation. He defended his PhD at ENS (École normale supérieure
-    Paris-Saclay), and has worked as a PostDoc at University of Oxford and a research
-    scientist at CNRS (Centre national de la recherche scientifique).
+    with Arnaud Doucet. Valentin&#x27;s research interests are in stochastic methods
+    for generative modelling. In particular he studies theoretical/practical aspects
+    of deep learning for data generation. He defended his PhD at ENS (École normale
+    supérieure Paris-Saclay), and has worked as a PostDoc at University of Oxford
+    and a research scientist at CNRS (Centre national de la recherche scientifique).
   registration_url: extra2
   youtube_id: wP8ic2oSEyY
   is_cain: false
@@ -2854,7 +2863,7 @@
     how organizations collaborate on sensitive tasks. At its core, this technique
     allows multiple participants to collaboratively train a shared model while keeping
     their data localized, thereby avoiding data centralization. This approach is particularly
-    relevant in today''s data-sensitive world, offering both improved data utilization
+    relevant in today&#x27;s data-sensitive world, offering both improved data utilization
     and a gateway to novel applications that respect individual privacy concerns.
     The vast potential of federated learning is highlighted by its applicability across
     multiple industries. In the realm of life sciences, for example, it allows for
@@ -2899,33 +2908,34 @@
   venue_address: RISE Lund Office (Scheelevägen 17)
   photo: /assets/images/speakers/2023-09-21-nico-lang.jpg
   abstract: Mapping forest structure on a global scale is an important component for
-    understanding the Earth's carbon cycle and conserving biodiversity. Several new
-    space missions have been developed to support these goals by measuring forest
+    understanding the Earth&#x27;s carbon cycle and conserving biodiversity. Several
+    new space missions have been developed to support these goals by measuring forest
     structure to estimate biomass and carbon stocks. To analyze the vast amount of
     remote sensing data, efficient modelling approaches are needed that are robust
     to the inherent noise in these data. Data-driven approaches, especially modern
     deep learning methods, promise great potential for interpreting and combining
     data from different space missions to estimate vegetation parameters with enhanced
     spatial and temporal resolution. This talk will present recent research results
-    for global vegetation height mapping exploiting ESA's Sentinel-2 optical imagery
-    and NASA's GEDI full waveform LIDAR. By integrating probabilistic deep learning
-    approaches (i.e. deep ensembles), the predictive uncertainty of the models is
-    quantified, which is crucial for downstream applications that depend on reliable
-    estimates.
+    for global vegetation height mapping exploiting ESA&#x27;s Sentinel-2 optical
+    imagery and NASA&#x27;s GEDI full waveform LIDAR. By integrating probabilistic
+    deep learning approaches (i.e. deep ensembles), the predictive uncertainty of
+    the models is quantified, which is crucial for downstream applications that depend
+    on reliable estimates.
   bio: 'Nico is Postdoc at the University of Copenhagen associated with the Pioneer
     Centre for AI, where he is co-advised by Serge Belongie and Christian Igel. He
     received his PhD from ETH Zurich, where he was working in the EcoVision Lab that
     is part of the Photogrammetry and Remote Sensing (PRS) group under the supervision
-    of Prof. Konrad Schindler and Prof. Jan Dirk Wegner. During his master''s degree
-    in Geomatics at ETHZ he discovered his fascination for machine learning and computer
-    vision in the context of geodata sciences. Following on from work started during
-    his earlier academic visit to Prof. Pietro Perona’s Computational Vision lab at
-    Caltech, he has worked on deep learning approaches to monitor urban trees from
-    street-level images. In his PhD, he developed an approach to compute a high-resolution
-    canopy height model of the entire Earth by fusing optical satellite images with
-    spaceborne LIDAR. His current research interests include quantifying the uncertainty
-    in such estimates and learning from imbalanced data, which are ubiquitous challenges
-    when working with real-world data. Website: https://langnico.github.io/'
+    of Prof. Konrad Schindler and Prof. Jan Dirk Wegner. During his master&#x27;s
+    degree in Geomatics at ETHZ he discovered his fascination for machine learning
+    and computer vision in the context of geodata sciences. Following on from work
+    started during his earlier academic visit to Prof. Pietro Perona’s Computational
+    Vision lab at Caltech, he has worked on deep learning approaches to monitor urban
+    trees from street-level images. In his PhD, he developed an approach to compute
+    a high-resolution canopy height model of the entire Earth by fusing optical satellite
+    images with spaceborne LIDAR. His current research interests include quantifying
+    the uncertainty in such estimates and learning from imbalanced data, which are
+    ubiquitous challenges when working with real-world data. Website: <a href="https://langnico.github.io/"
+    target="_blank" rel="noopener noreferrer">https://langnico.github.io/</a>'
   registration_url: extra2
   youtube_id: 1b1mPRJ21og
   is_cain: false
@@ -3019,11 +3029,11 @@
     may result in a mismatch between samples available for training and future samples
     used for exploiting the models. Statistically, training and test samples may originate
     from different distributions. We call each of these data and the corresponding
-    data distributions "domains". To alleviate the differences between the domains,
-    a solution is Domain Adaptation (DA); DA methods reduce the distance between diverse
-    distributions. The scenario most often addressed by the literature is that DA
-    deals with two domains: Source and Target. In this scenario, the source dataset
-    is fully labeled. The goal is to adapt source and target domains to construct
+    data distributions &quot;domains&quot;. To alleviate the differences between the
+    domains, a solution is Domain Adaptation (DA); DA methods reduce the distance
+    between diverse distributions. The scenario most often addressed by the literature
+    is that DA deals with two domains: Source and Target. In this scenario, the source
+    dataset is fully labeled. The goal is to adapt source and target domains to construct
     a generalizable model for the target domain using the labeled source samples.
     However, in order to achieve this objective, domain adaptation typically requires
     centralizing samples from all domains to facilitate the adaptation process. ,
@@ -3035,9 +3045,9 @@
     learning, have gained attention as alternatives to centralized approaches. These
     decentralized methods enable collaborative learning to build a shared global model.
     Given that distributed domains often possess statistical heterogeneity, the global
-    model''s effectiveness can be impacted. Theoretically, we illustrate how heterogeneity
-    among clients influences the global model''s performance on each individual client.
-    This highlights the necessity for Decentralized Domain Adaptation approaches.'
+    model&#x27;s effectiveness can be impacted. Theoretically, we illustrate how heterogeneity
+    among clients influences the global model&#x27;s performance on each individual
+    client. This highlights the necessity for Decentralized Domain Adaptation approaches.'
   bio: Zahra (Nasrin) Taghiyarrenani is currently in her last year as a Ph.D. candidate
     at Halmstad University, where her specialization lies in the area of Domain Adaptation
     and Federated Learning. Through her studies, she, by proposing new Domain Adaptation
@@ -3144,13 +3154,13 @@
     in low- and middle-income countries that today are lacking any solution for examination.'
   bio: Ida Arvidsson is a postdoctoral researcher at the Division for Computer Vision
     and Machine Learning at the Centre for Mathematical Sciences, Lund University.
-    She defended her Ph.D. in applied mathematics in 2021, titled "Applications of
-    Deep Learning in Medical Image Analysis - Grading of Prostate Cancer and Detection
-    of Coronary Artery Disease". Her main research interest is deep learning applied
-    to medical images. She is working with projects applied to histopathology (grading
-    of prostate cancer), dermatology (classification of skin cancer) and radiology
-    (classification of breast cancer, detection of coronary artery disease and prediction
-    of Alzheimer's disease).
+    She defended her Ph.D. in applied mathematics in 2021, titled &quot;Applications
+    of Deep Learning in Medical Image Analysis - Grading of Prostate Cancer and Detection
+    of Coronary Artery Disease&quot;. Her main research interest is deep learning
+    applied to medical images. She is working with projects applied to histopathology
+    (grading of prostate cancer), dermatology (classification of skin cancer) and
+    radiology (classification of breast cancer, detection of coronary artery disease
+    and prediction of Alzheimer&#x27;s disease).
   youtube_id: juqfBPv9aFk
   is_cain: false
 - id: '2023-04-27'
@@ -3270,7 +3280,8 @@
     Finally, I will show how studying real-world data opens new frontiers in machine
     learning research and provides greater opportunities for impact in important application
     domains.
-  bio: Elijah Cole (https://elijahcole.me/) is a Ph.D. candidate in the Computing
+  bio: Elijah Cole (<a href="https://elijahcole.me/" target="_blank" rel="noopener
+    noreferrer">https://elijahcole.me/</a>) is a Ph.D. candidate in the Computing
     and Mathematical Sciences department at Caltech, advised by Pietro Perona. He
     received a B.S.E. from Duke University in 2017 with a double major in electrical
     engineering and mathematics. During his Ph.D. he completed internships at Google
@@ -3354,9 +3365,10 @@
     sub-Saharan African cities. His latest research unravels the potential of machine
     and deep learnning and Earth Observation to detect, measure and characterize socio-economic
     inequalities in deprived urban areas in support of the most vulnerable populations.
-    Stefanos is the co-Chair of the European's Assosciation of Remote Sensing Laboratories
-    Special Interest Group on Developing Countries. He has coordinated and managed
-    large international consortia such as REACT (https://react.ulb.be/).
+    Stefanos is the co-Chair of the European&#x27;s Assosciation of Remote Sensing
+    Laboratories Special Interest Group on Developing Countries. He has coordinated
+    and managed large international consortia such as REACT (<a href="https://react.ulb.be/"
+    target="_blank" rel="noopener noreferrer">https://react.ulb.be/</a>).
   youtube_id: cH3Lc5MettA
   is_cain: false
 - id: '2023-03-09'
@@ -3374,10 +3386,10 @@
     the summaries when we require synthesis of different parts of the input document
     to achieve a reasonable summary. I will then show how we can consider context
     factors when summarizing, as they are often latent but significantly affect the
-    desired outcome. I will continue by showing that "verifier models" can mitigate
-    the well-known problem of imprecision with generated text, focusing on the accuracy
-    of specifying quantitative information. I will conclude with thoughts about where
-    we are going with LLMs, and what we can do better.
+    desired outcome. I will continue by showing that &quot;verifier models&quot; can
+    mitigate the well-known problem of imprecision with generated text, focusing on
+    the accuracy of specifying quantitative information. I will conclude with thoughts
+    about where we are going with LLMs, and what we can do better.
   bio: Shay Cohen is a Reader at the University of Edinburgh (School of Informatics).
     Before this, he was a postdoctoral research scientist in the Department of Computer
     Science at Columbia University and held an NSF/CRA Computing Innovation Fellowship.
@@ -3463,8 +3475,8 @@
     levels of label noise or limited sample sizes.
   bio: Vincent Szolnoky is an industrial PhD student at Chalmers University of Technology
     and Centiro. His research is centered around training and regularisation of Neural
-    Networks. Most recently, Vincent's paper on Model Gradient Similarity and its
-    connection to regularisation for Neural Networks was accepted to NeurIPS 2022,
+    Networks. Most recently, Vincent&#x27;s paper on Model Gradient Similarity and
+    its connection to regularisation for Neural Networks was accepted to NeurIPS 2022,
     one of the largest machine learning conferences, where it was well received and
     garnered much attention.
   youtube_id: o5E1Z_i943A
@@ -3563,11 +3575,11 @@
     UK. He is an expert on analysis and processing of audio, using a wide range of
     signal processing and machine learning methods. He led the first international
     data challenge on Detection and Classification of Acoustic Scenes and Events (DCASE),
-    and is a co-editor of the recent book on "Computational Analysis of Sound Scenes
-    and Events" (Springer, 2018). He currently holds a 5-year EPSRC Fellowship "AI
-    for Sound" on automatic recognition of everyday sounds. He is a Member of the
-    IEEE Signal Processing Society Technical Committee on Audio and Acoustic Signal
-    Processing, and a Fellow of the IET and IEEE.
+    and is a co-editor of the recent book on &quot;Computational Analysis of Sound
+    Scenes and Events&quot; (Springer, 2018). He currently holds a 5-year EPSRC Fellowship
+    &quot;AI for Sound&quot; on automatic recognition of everyday sounds. He is a
+    Member of the IEEE Signal Processing Society Technical Committee on Audio and
+    Acoustic Signal Processing, and a Fellow of the IET and IEEE.
   youtube_id: otYyKy5WzZ8
   is_cain: false
 - id: '2022-12-08'
@@ -3589,9 +3601,9 @@
 
     ,
 
-    With satellite maps and Google Maps, it''s easy to think we have all the maps
+    With satellite maps and Google Maps, it&#x27;s easy to think we have all the maps
     we need. In fact, the Swedish terrain is poorly mapped. If you walk in the forest,
-    it doesn''t take long until you find a stream, a wetland, or cultural remains
+    it doesn&#x27;t take long until you find a stream, a wetland, or cultural remains
     that are not marked on any maps. However, with the help of airborne laser scans,
     we can now peer through the canopy cover and get a clear view of the forest floor.
     My research focuses on using AI to map the forest landscape but I also ask questions
@@ -3633,20 +3645,21 @@
     common categories . To address these shortcomings, we introduce a new large-scale
     dataset that joins public tree censuses from 23 cities with a large collection
     of street level and aerial imagery. Our Auto Arborist dataset contains over 2.5M
-    trees and >300 genera and is >2 orders of magnitude larger than the closest dataset
-    in the literature. We introduce baseline results on our dataset across modalities
-    as well as metrics for the detailed analysis of generalization with respect to
-    geographic distribution shifts, vital for such a system to be deployed at-scale.'
-  bio: Sara is an incoming assistant professor at MIT EECS' Faculty of AI and Decision
-    Making and CSAIL, and a Visiting Researcher at Google working on Auto Arborist.
-    She's always loved the natural world, and has seen a growing need for technology-based
-    approaches to conservation and sustainability challenges. Her research focuses
-    on building computer vision methods that enable global-scale environmental and
-    biodiversity monitoring across data modalities, tackling real-world challenges
-    including strong spatiotemporal correlations that lead to domain shift, imperfect
-    data quality, fine-grained categories, and long-tailed distributions. Sara received
-    my PhD in Computing and Mathematical Sciences (CMS) at Caltech, advised by Pietro
-    Perona, where she recieved the Amori Doctoral Prize for my dissertation.
+    trees and &gt;300 genera and is &gt;2 orders of magnitude larger than the closest
+    dataset in the literature. We introduce baseline results on our dataset across
+    modalities as well as metrics for the detailed analysis of generalization with
+    respect to geographic distribution shifts, vital for such a system to be deployed
+    at-scale.'
+  bio: Sara is an incoming assistant professor at MIT EECS&#x27; Faculty of AI and
+    Decision Making and CSAIL, and a Visiting Researcher at Google working on Auto
+    Arborist. She&#x27;s always loved the natural world, and has seen a growing need
+    for technology-based approaches to conservation and sustainability challenges.
+    Her research focuses on building computer vision methods that enable global-scale
+    environmental and biodiversity monitoring across data modalities, tackling real-world
+    challenges including strong spatiotemporal correlations that lead to domain shift,
+    imperfect data quality, fine-grained categories, and long-tailed distributions.
+    Sara received my PhD in Computing and Mathematical Sciences (CMS) at Caltech,
+    advised by Pietro Perona, where she recieved the Amori Doctoral Prize for my dissertation.
   youtube_id: Ob7XfUPmKu4
   is_cain: false
 - id: '2022-11-24'
@@ -3723,7 +3736,7 @@
   bio: Frederik did his Master in environmental engineering and his PhD in machine
     learning with a focus on the intersection of these two fields. After his PhD,
     Frederik joined Google as a visiting faculty researcher, where he is working in
-    Google's Flood Forecasting team, building a global flood warning system.
+    Google&#x27;s Flood Forecasting team, building a global flood warning system.
   youtube_id: Wrv-IS3wf80
   is_cain: false
 - id: '2022-10-27'
@@ -3838,19 +3851,19 @@
     previous training sessions in continually learned models. This new research path
     of zero-waste machine learning opens a plethora of research opportunities, both
     for academia and industry.'
-  bio: Tomasz Trzciński (DSc, WUT'20; PhD, EPFL'14; MSc, UPC/PoliTo'10) is an Associate
-    Professor at Warsaw University of Technology, where he leads a Computer Vision
-    Lab, and at Jagiellonian University of Cracow (GMUM). He is also a Computer Vision
-    Group Leader at IDEAS NCBR, a publicly-funded Polish Center for AI. He was a Visiting
-    Scholar at Stanford University in 2017 and at Nanyang Technological University
-    in 2019. Previously, he worked at Google in 2013, Qualcomm in 2012 and Telefónica
-    in 2010. He is an Associate Editor of IEEE Access and MDPI Electronics and frequently
-    serves as a reviewer in major computer science conferences (CVPR, ICCV, ECCV,
-    NeurIPS, ICML) and journals (TPAMI, IJCV, CVIU). He is a Senior Member of IEEE,
-    member of ELLIS Society, member of the ALICE Collaboration at CERN and an expert
-    of National Science Centre and Foundation for Polish Science. He is a Chief Scientist
-    at Tooploox and a co-founder of Comixify, a technology startup focused on using
-    machine learning algorithms for video editing.
+  bio: Tomasz Trzciński (DSc, WUT&#x27;20; PhD, EPFL&#x27;14; MSc, UPC/PoliTo&#x27;10)
+    is an Associate Professor at Warsaw University of Technology, where he leads a
+    Computer Vision Lab, and at Jagiellonian University of Cracow (GMUM). He is also
+    a Computer Vision Group Leader at IDEAS NCBR, a publicly-funded Polish Center
+    for AI. He was a Visiting Scholar at Stanford University in 2017 and at Nanyang
+    Technological University in 2019. Previously, he worked at Google in 2013, Qualcomm
+    in 2012 and Telefónica in 2010. He is an Associate Editor of IEEE Access and MDPI
+    Electronics and frequently serves as a reviewer in major computer science conferences
+    (CVPR, ICCV, ECCV, NeurIPS, ICML) and journals (TPAMI, IJCV, CVIU). He is a Senior
+    Member of IEEE, member of ELLIS Society, member of the ALICE Collaboration at
+    CERN and an expert of National Science Centre and Foundation for Polish Science.
+    He is a Chief Scientist at Tooploox and a co-founder of Comixify, a technology
+    startup focused on using machine learning algorithms for video editing.
   youtube_id: wChM19Qf2x4
   is_cain: false
 - id: '2022-09-29'
@@ -4230,13 +4243,13 @@
     discuss future workflow and model improvements to better deliver valuable information
     in support of environmental management decisions.
   bio: Jake Zwart (he/him) is a data scientist at the U.S. Geological Survey (USGS)
-    in the Data Science Branch of the Water Mission Area. Jake's work currently focuses
-    on producing short-term forecasts of stream temperature at regional scales to
-    aid in water resources decision making. The data science group at USGS has developed
-    techniques to inject scientific knowledge into machine learning models (process-guided
-    deep learning) to make accurate predictions of environmental variables, and developed
-    methods for assimilating real-time observations into these models to improve near-term
-    forecasts of water quality.
+    in the Data Science Branch of the Water Mission Area. Jake&#x27;s work currently
+    focuses on producing short-term forecasts of stream temperature at regional scales
+    to aid in water resources decision making. The data science group at USGS has
+    developed techniques to inject scientific knowledge into machine learning models
+    (process-guided deep learning) to make accurate predictions of environmental variables,
+    and developed methods for assimilating real-time observations into these models
+    to improve near-term forecasts of water quality.
   is_cain: false
 - id: '2022-04-07'
   date: '2022-04-07'
@@ -4258,24 +4271,25 @@
     task as the testbed and consider three different datasets of varying size. Our
     experiments reveal three major findings. First, we can control the oversmoothing
     rate of the model by tuning the strength of the regularization. Second, by enhancing
-    the oversmoothing loss contribution, the probability and the rank of <eos> token
-    decrease heavily at positions where it is not supposed to be. Third, the proposed
-    regularization impacts the outcome of beam search especially when a large beam
-    is used. The degradation of translation quality (measured in BLEU) with a large
-    beam significantly lessens with lower oversmoothing rate, but the degradation
+    the oversmoothing loss contribution, the probability and the rank of &lt;eos&gt;
+    token decrease heavily at positions where it is not supposed to be. Third, the
+    proposed regularization impacts the outcome of beam search especially when a large
+    beam is used. The degradation of translation quality (measured in BLEU) with a
+    large beam significantly lessens with lower oversmoothing rate, but the degradation
     compared to smaller beam sizes remains to exist. From these observations, we conclude
     that the high degree of oversmoothing is the main reason behind the degenerate
     case of overly probable short sequences in a neural autoregressive model.
   bio: Kyunghyun Cho is an associate professor of computer science and data science
-    at New York University and CIFAR Fellow of Learning in Machines & Brains. He is
-    also a senior director of frontier research at the Prescient Design team within
-    Genentech Research & Early Development (gRED). He was a research scientist at
-    Facebook AI Research from June 2017 to May 2020 and a postdoctoral fellow at University
-    of Montreal until Summer 2015 under the supervision of Prof. Yoshua Bengio, after
-    receiving PhD and MSc degrees from Aalto University April 2011 and April 2014,
-    respectively, under the supervision of Prof. Juha Karhunen, Dr. Tapani Raiko and
-    Dr. Alexander Ilin. He tries his best to find a balance among machine learning,
-    natural language processing, and life, but almost always fails to do so.
+    at New York University and CIFAR Fellow of Learning in Machines &amp; Brains.
+    He is also a senior director of frontier research at the Prescient Design team
+    within Genentech Research &amp; Early Development (gRED). He was a research scientist
+    at Facebook AI Research from June 2017 to May 2020 and a postdoctoral fellow at
+    University of Montreal until Summer 2015 under the supervision of Prof. Yoshua
+    Bengio, after receiving PhD and MSc degrees from Aalto University April 2011 and
+    April 2014, respectively, under the supervision of Prof. Juha Karhunen, Dr. Tapani
+    Raiko and Dr. Alexander Ilin. He tries his best to find a balance among machine
+    learning, natural language processing, and life, but almost always fails to do
+    so.
   youtube_id: gnViKvkFXj0
   is_cain: false
 - id: '2022-03-31'
@@ -4342,10 +4356,11 @@
     A way that has been proposed to mitigate this issue is to connect the model with
     more information than text, such as images, sounds and effects of actions, that
     may provide the meaning behind the text. This is also referred to as “grounding
-    the model". The proposed setup is not entirely dissimilar to how humans can read
-    and write, but also interact with the outside world, by e.g. being able to see
-    and hear. In my presentation, I will give an overview of this problem and the
-    proposed solutions. I will also talk about my contributions to this research area.'
+    the model&quot;. The proposed setup is not entirely dissimilar to how humans can
+    read and write, but also interact with the outside world, by e.g. being able to
+    see and hear. In my presentation, I will give an overview of this problem and
+    the proposed solutions. I will also talk about my contributions to this research
+    area.'
   bio: Lovisa Hagström is a PhD student at the department of Computer Science and
     Engineering at Chalmers University of Technology. She does research within Natural
     Language Processing (NLP) with a focus on making language models learn from more
@@ -4444,23 +4459,26 @@
 
     REFERENCES:,
 
-    (1) Morfi et al (2021) JASA, https://asa.scitation.org/doi/10.1121/10.0005475,,,,time,
+    (1) Morfi et al (2021) JASA, <a href="https://asa.scitation.org/doi/10.1121/10.0005475,,,,time"
+    target="_blank" rel="noopener noreferrer">https://asa.scitation.org/doi/10.1121/10.0005475,,,,time</a>,
 
-    (2) Simon et al (2022) Plos Comp Biol, https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009706'
-  bio: "Dan Stowell is an Associate Professor of AI & Biodiversity working in the\
-    \ Netherlands (Tilburg University, Naturalis Biodiversity Centre, JADS). His research\
-    \ is about machine listening and computational bioacoustics - which means using\
-    \ computation (especially machine learning) to understand animal sounds and other\
-    \ sound signals.,\n,\nI develop automatic processes to analyse large amounts of\
-    \ sound,\nrecordings - for example detecting the bird sounds in there and how\
-    \ they,\n vary, how they relate to each other, how the birds' behaviour relates,\n\
-    to the sounds they make. The research work is focussed on the machine,\nlearning\
-    \ and signal processing methods that can help with these,\nquestions. I also work\
-    \ with others to apply these methods to,\nbiodiversity monitoring.,\n,\nI am also\
-    \ a Fellow of the Alan Turing Institute. I work with OpenClimateFix and OpenStreetMap\
-    \ on addressing climate change through solar panel mapping.,\n,\nI use various\
-    \ machine learning methods, including Gaussian processes, point process models,\
-    \ feature learning... sure, yes, and deep learning too, lots of deep learning."
+    (2) Simon et al (2022) Plos Comp Biol, <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009706"
+    target="_blank" rel="noopener noreferrer">https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009706</a>'
+  bio: "Dan Stowell is an Associate Professor of AI &amp; Biodiversity working in\
+    \ the Netherlands (Tilburg University, Naturalis Biodiversity Centre, JADS). His\
+    \ research is about machine listening and computational bioacoustics - which means\
+    \ using computation (especially machine learning) to understand animal sounds\
+    \ and other sound signals.,\n,\nI develop automatic processes to analyse large\
+    \ amounts of sound,\nrecordings - for example detecting the bird sounds in there\
+    \ and how they,\n vary, how they relate to each other, how the birds&#x27; behaviour\
+    \ relates,\nto the sounds they make. The research work is focussed on the machine,\n\
+    learning and signal processing methods that can help with these,\nquestions. I\
+    \ also work with others to apply these methods to,\nbiodiversity monitoring.,\n\
+    ,\nI am also a Fellow of the Alan Turing Institute. I work with OpenClimateFix\
+    \ and OpenStreetMap on addressing climate change through solar panel mapping.,\n\
+    ,\nI use various machine learning methods, including Gaussian processes, point\
+    \ process models, feature learning... sure, yes, and deep learning too, lots of\
+    \ deep learning."
   youtube_id: 66syy3dXa5Y
   is_cain: false
 - id: '2022-02-10'
@@ -4576,10 +4594,10 @@
   time: 15:00 CET
   location: Sweden / Live Stream
   photo: /assets/images/speakers/2022-01-13-andrew-jesson.jpg
-  abstract: 'How will a patient''s health be affected by taking a given medication?
-    How will a user''s question be answered by a google search result? How will cloud
-    reflectively and precipitation be influenced by a local emissions policy? Making
-    effective decisions depends on being able to answer such questions. Answering
+  abstract: 'How will a patient&#x27;s health be affected by taking a given medication?
+    How will a user&#x27;s question be answered by a google search result? How will
+    cloud reflectively and precipitation be influenced by a local emissions policy?
+    Making effective decisions depends on being able to answer such questions. Answering
     such questions requires knowledge about the causal effect that a decision (medication,
     search result, emissions policy) has in a specific context. And knowing the effect
     of the decision requires knowledge about the context. In this talk, I will review
@@ -4640,10 +4658,10 @@
     enables us to use posterior sampling to learn efficiently from data.
   bio: Arman Rahbar is a WASP Ph.D. student at Chalmers University of Technology and
     is working under the supervision of Prof. Morteza Chehreghani. He received his
-    bachelor's and master's degrees in Computer Engineering from Sharif University
-    of Technology and Tehran Polytechnic, respectively. Arman's research is mainly
-    focused on representation learning problems that need to deal with the lack of
-    sufficient available information.
+    bachelor&#x27;s and master&#x27;s degrees in Computer Engineering from Sharif
+    University of Technology and Tehran Polytechnic, respectively. Arman&#x27;s research
+    is mainly focused on representation learning problems that need to deal with the
+    lack of sufficient available information.
   is_cain: false
 - id: '2021-12-02'
   date: '2021-12-02'
@@ -4671,8 +4689,8 @@
     what interesting future research directions might be.'
   bio: Ebba is a junior researcher at RISE, where she has been working on Federated
     Learning for Generative Adversarial Networks since 2021. She has a MSc in Engineering
-    Mathematics from Chalmers University of Technology and her master's thesis focused
-    on generative modelling of microwave data for stroke detection.
+    Mathematics from Chalmers University of Technology and her master&#x27;s thesis
+    focused on generative modelling of microwave data for stroke detection.
   youtube_id: 2GCIjkqiorw
   is_cain: false
 - id: '2021-11-25'
@@ -4735,8 +4753,8 @@
     can be used to train models for sound event detection. In addition to this, some
     areas of future research are discussed for how to improve upon current techniques.
   bio: Martin Willbo recently graduated from Chalmers University of Technology with
-    a master's in data science and Artificial Intelligence. Martin is employed as
-    a junior researcher at RISE working on few-shot learning for sound event detection.
+    a master&#x27;s in data science and Artificial Intelligence. Martin is employed
+    as a junior researcher at RISE working on few-shot learning for sound event detection.
   youtube_id: Iy4bjl79Pj0
   is_cain: false
 - id: '2021-11-11'
