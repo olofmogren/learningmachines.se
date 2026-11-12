@@ -2,39 +2,126 @@
 layout: default
 ---
 {% assign seminar = site.data.seminars | where: "date", page.seminar_date | first %}
+{% assign cleaned_title = seminar.title | strip %}
+{% assign cleaned_abstract = seminar.abstract | strip %}
+{% assign cleaned_bio = seminar.bio | strip %}
+{% assign cleaned_role = seminar.speaker_title | default: seminar.role | default: seminar.position | strip %}
+{% assign cleaned_affiliation = seminar.affiliation | strip %}
 
 <div class="container" style="padding: 40px 0;">
   <article class="seminar-card">
     <div class="seminar-header">
       <span>📅 {{ seminar.date }} &bull; {{ seminar.time | default: "15:00 CET" }}</span>
+
+      <span class="location-badge">
+        {% if seminar.city and seminar.city != "" %}
+          📍 Hybrid — {{ seminar.city }}
+        {% else %}
+          Live Stream
+        {% endif %}
+      </span>
     </div>
+
     <div class="seminar-body">
       <div class="speaker-column">
         {% if seminar.photo and seminar.photo != "" %}
           <img src="{{ seminar.photo }}" alt="{{ seminar.speaker }}" class="speaker-avatar">
+        {% elsif seminar.is_cain %}
+          <img src="{{ '/assets/images/cain-globe-only.png' | relative_url }}" alt="Climate AI Nordics" class="speaker-avatar fallback-avatar cain-fallback">
         {% else %}
-          <img src="{{ '/assets/images/lm-logo.svg' | relative_url }}" alt="Learning Machines" class="speaker-avatar">
+          <img src="{{ '/assets/images/lm-logo.svg' | relative_url }}" alt="Learning Machines" class="speaker-avatar fallback-avatar lm-fallback">
         {% endif %}
       </div>
+
       <div class="seminar-info">
-        <h1 class="seminar-title">{{ seminar.title | default: seminar.speaker }}</h1>
-        <div class="speaker-meta">
-          {{ seminar.speaker }}
-          {% if seminar.affiliation and seminar.affiliation != "" %}
-            <span class="affiliation">— {{ seminar.affiliation }}</span>
+        {% if cleaned_title != "" and cleaned_title != nil %}
+          <h1 class="seminar-title">{{ cleaned_title }}</h1>
+
+          <div class="speaker-meta">
+            {{ seminar.speaker }}
+            {% if cleaned_role != "" and cleaned_role != nil %}
+              <span class="speaker-role">, {{ cleaned_role }}</span>
+            {% endif %}
+            {% if cleaned_affiliation != "" and cleaned_affiliation != nil %}
+              <span class="affiliation">— {{ cleaned_affiliation }}</span>
+            {% endif %}
+          </div>
+        {% else %}
+          <h1 class="seminar-title">{{ seminar.speaker | default: "Upcoming seminar" }}</h1>
+
+          {% assign has_role = false %}
+          {% assign has_affil = false %}
+          {% if cleaned_role != "" and cleaned_role != nil %}{% assign has_role = true %}{% endif %}
+          {% if cleaned_affiliation != "" and cleaned_affiliation != nil %}{% assign has_affil = true %}{% endif %}
+
+          {% if has_role or has_affil %}
+            <div class="speaker-meta">
+              {% if has_role %}
+                <span class="speaker-role">{{ cleaned_role }}</span>
+              {% endif %}
+              {% if has_affil %}
+                <span class="affiliation">{% if has_role %} — {% endif %}{{ cleaned_affiliation }}</span>
+              {% endif %}
+            </div>
           {% endif %}
-        </div>
-        {% if seminar.abstract and seminar.abstract != "" %}
-          <p class="seminar-abstract">{{ seminar.abstract }}</p>
         {% endif %}
-        {% if seminar.bio and seminar.bio != "" %}
-          <div class="bio-content"><p>{{ seminar.bio }}</p></div>
+
+        {% if seminar.youtube_id and seminar.youtube_id != "" %}
+          <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; margin: 20px 0; background: #000;">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/{{ seminar.youtube_id }}"
+              title="{{ cleaned_title | default: seminar.speaker | escape }}"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
         {% endif %}
+
+        {% if cleaned_abstract != "" and cleaned_abstract != nil %}
+          <p class="seminar-abstract">{{ cleaned_abstract }}</p>
+        {% endif %}
+
+        {% if cleaned_bio != "" and cleaned_bio != nil %}
+          <div class="bio-content" style="margin-top: 16px;">
+            <p>{{ cleaned_bio }}</p>
+          </div>
+        {% endif %}
+
+        {% if seminar.venue_address and seminar.venue_address != "" %}
+          <details class="venue-details">
+            <summary>📍 On-site venue &amp; address</summary>
+            <div class="venue-content">
+              <p>{{ seminar.venue_address }}</p>
+            </div>
+          </details>
+        {% endif %}
+
+        {% unless seminar.youtube_id and seminar.youtube_id != "" %}
+          <div class="seminar-actions" style="margin-top: 18px;">
+            {% if seminar.registration_url and seminar.registration_url != "" %}
+              <a href="{{ seminar.registration_url }}" target="_blank" rel="noopener noreferrer" class="btn-stream">
+                Register for Seminar &rarr;
+              </a>
+            {% endif %}
+          </div>
+        {% endunless %}
       </div>
     </div>
   </article>
 
-  <p style="margin-top: 20px;">
-    <a href="{{ '/history/#' | append: seminar.date | relative_url }}" class="btn-secondary">&larr; View all past seminars</a>
-  </p>
+  <div style="margin-top: 24px;">
+    {% assign today_str = 'now' | date: '%Y-%m-%d' %}
+    {% if seminar.date < today_str %}
+      <a href="{{ '/history/#' | append: seminar.date | relative_url }}" class="btn-secondary">
+        &larr; View all past seminars
+      </a>
+    {% else %}
+      <a href="{{ '/#' | append: seminar.date | relative_url }}" class="btn-secondary">
+        &larr; View upcoming seminars
+      </a>
+    {% endif %}
+  </div>
 </div>
+
