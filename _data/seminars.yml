@@ -15,15 +15,14 @@
     from Central South University in China and completed research internships at Shanghai
     United Imaging Intelligence and The Chinese University of Hong Kong (Shenzhen).
   is_cain: false
-- id: '2027-03-11'
-  date: '2027-03-11'
+- id: '2027-02-11'
+  date: '2027-02-11'
   speaker: Emanuele Rossi
   speaker_title: Post doc
   title: ''
   affiliation: Post doc, Sapienza University, Rome
   time: 15:00 CET
   location: Sweden / Live Stream
-  photo: /assets/images/speakers/2027-03-11-emanuele-rossi.jpg
   bio: Emanuele Rossi is a postdoctoral researcher in the Gladia group at Sapienza
     University of Rome, working with Emanuele Rodolà. His research explores how machine
     learning, particularly multimodal models and mechanistic interpretability, can
