@@ -15,6 +15,15 @@
     from Central South University in China and completed research internships at Shanghai
     United Imaging Intelligence and The Chinese University of Hong Kong (Shenzhen).
   is_cain: false
+- id: '2027-02-25'
+  date: '2027-02-25'
+  speaker: Yuki Miura
+  speaker_title: Assistant Professor
+  title: ''
+  affiliation: Assistant Professor, New York University
+  time: 15:00 CET
+  location: Sweden / Live Stream
+  is_cain: true
 - id: '2027-02-11'
   date: '2027-02-11'
   speaker: Emanuele Rossi
